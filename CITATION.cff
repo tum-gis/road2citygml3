@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you found this documentation helpful for your work, please consider citing it as follows."
+authors:
+- family-names: "Beil"
+  given-names: "Christof"
+  orcid: "https://orcid.org/0000-0002-6231-2769"
+- family-names: "Kolbe"
+  given-names: "Thomas H."
+  orcid: "https://orcid.org/0000-0003-1456-0423"
+title: "Road2CityGML3"
+version: 0.9
+date-released: 2022-08-23
+url: "https://github.com/tum-gis/road2citygml3"
+preferred-citation:
+  type: manual
+  authors:
+  - family-names: "Beil"
+    given-names: "Christof"
+    orcid: "https://orcid.org/0000-0002-6231-2769"
+  - family-names: "Kolbe"
+    given-names: "Thomas H."
+    orcid: "https://orcid.org/0000-0003-1456-0423"
+  title: "Road2CityGML3"
+  version: 0.9
+  year: 2022
+  url: "https://github.com/tum-gis/road2citygml3"
