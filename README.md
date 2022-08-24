@@ -2,7 +2,7 @@
 
 
 <p align="center">
-   <img src="https://github.com/ChBeil/road2citygml/blob/main/src/header.png" width="500" />
+   <img src="https://github.com/tum-gis/road2citygml3/blob/main/src/header.png" width="500" />
 </p>
 
 [![CC BY 4.0][cc-by-shield]][cc-by]
