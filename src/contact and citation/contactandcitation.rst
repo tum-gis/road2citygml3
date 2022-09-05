@@ -18,11 +18,25 @@ If you find this documentation helpful for your work, please consider citing it 
            year = {2022}
           }
 
+The following related publication explains concepts of the CityGML 3.0 Transportation module.
+
+.. code-block:: 
+
+   @Article{Beil2020,
+  author   = {Beil, Christof and Ruhdorfer, Roland and Coduro, Theresa and Kolbe, Thomas H.},
+  title    = {Detailed Streetspace Modelling for Multiple Applications: Discussions on the Proposed CityGML 3.0 Transportation Model},
+  journal  = {ISPRS International Journal of Geo-Information},
+  year     = {2020},
+  volume   = {9},
+  number   = {10},
+  pages    = {603},
+  url      = {https://doi.org/10.3390/ijgi9100603},
+   }
 |envelope|  Contact 
 +++++++++++++++++++++++++++++++++++++++++++
 
 
-Do you have questions?  
+Do you have questions or suggesetions for improvement?  
 
 .. admonition:: Please get in touch 
 

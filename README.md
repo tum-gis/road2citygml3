@@ -2,7 +2,7 @@
 
 
 <p align="center">
-   <img src="https://github.com/tum-gis/road2citygml3/blob/main/src/header.png" width="500" />
+   <img src="https://github.com/tum-gis/road2citygml/blob/main/src/header.png" width="500" />
 </p>
 
 [![CC BY 4.0][cc-by-shield]][cc-by]
@@ -12,7 +12,7 @@ Guideline for modelling roads and the streetspace within semantic 3D city models
 
 View the documentation [here](https://www.3dcitydb.org/3dcitydb/fileadmin/public/road2citygml3/).
 
-
+Recommendations are related to the conceptual model of the Open Geospatial Consortium (OGC) standard [CityGML version 3.0](https://docs.ogc.org/is/20-010/20-010.html).
 
 ## Citation
 If you find this documentation helpful for your work, please consider citing it as follows.
@@ -23,6 +23,21 @@ If you find this documentation helpful for your work, please consider citing it 
         title  = {Road2CityGML3},  
         url = {https://github.com/tum-gis/road2citygml3},
         year = {2022}
+}
+```
+
+The following related publication explains concepts of the CityGML 3.0 Transportation module.
+
+```plain
+@Article{Beil2020,
+  author   = {Beil, Christof and Ruhdorfer, Roland and Coduro, Theresa and Kolbe, Thomas H.},
+  title    = {Detailed Streetspace Modelling for Multiple Applications: Discussions on the Proposed CityGML 3.0 Transportation Model},
+  journal  = {ISPRS International Journal of Geo-Information},
+  year     = {2020},
+  volume   = {9},
+  number   = {10},
+  pages    = {603},
+  url      = {https://doi.org/10.3390/ijgi9100603},
 }
 ```
 

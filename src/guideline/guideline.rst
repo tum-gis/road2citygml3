@@ -6,6 +6,8 @@ Motivation
 * The **City Geography Markup Language (CityGML)** is an international OGC standard for the representation and exchange of virtual 3D city and landscape models.
 * LoD 1 and LoD 2 models of buildings are available for a `large number of cities and countries <https://github.com/OloOcki/awesome-citygml>`_. 
 * Data gathering methods such as Mobile Mapping Systems and emerging applications such as urban digital twins begin to shift this focus towards models of road infrastructure.
+* Several cities (such as New York City, Melbourne, Munich or Singapore) have detailed data on roads and the street space available (usually within an ArcGIS or QGIS environment). However, this data is often structured in different ways (semantically and geometrically). Modelling this data within a common representation framework allows the immediate usage of the data with the same tools for a number of applications. 
+* While standards such as GDF or OpenDRIVE focus on linear (graph-based) or parametric representation of roads, CityGML 3.0 allows linear, polygonal as well as volumetric representations integrated within a consistent semantic 3D city model including models of buildings, vegetation, city furniture, tunnels or bridges. 
 * **CityGML version 3.0** provides revised and extended concepts for modelling roads and the streetspace useful for a variety of applications.
 
 
@@ -36,9 +38,7 @@ References
 ==========
 The conceptual model of CityGML version 3.0 as well as relevant publications in the context of semantic road modelling using CityGML are listed in this section.
 
-.. collapse:: Open list of references 
 
-   |
    .. [Kolbe2021] Kolbe, T.H., Kutzner, T., Smyth, C. S., Nagel, C., Roensdorf, C., Heazel, C. (2021), OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard, OGC Document 20-010, https://docs.ogc.org/is/20-010/20-010.html 
    .. [Beil2020a] Beil, C., Ruhdorfer, R. Coduro, T., Kolbe, T. H. (2020), Detailed Streetspace Modelling for Multiple Applications: Discussions on the Proposed CityGML 3.0 Transportation Model, ISPRS International Journal of Geo-Information, 9(10), 603, https://doi.org/10.3390/ijgi9100603 
    .. [Beil2020b] Beil, C., & Kolbe, T. H. (2020), Combined modelling of multiple transportation infrastructure within 3D city models and its implementation in CityGML 3.0,  Int. Arch. Photogramm. Remote Sens. Spat. Inf. Sci, VI-4/W1, 29-36, https://doi.org/10.5194/isprs-annals-VI-4-W1-2020-29-2020
@@ -49,13 +49,16 @@ The conceptual model of CityGML version 3.0 as well as relevant publications in 
    .. [Labetski2018] Labetski, A., van Gerwen, S.,  Tamminga, G.,  Ledoux, H., Stoter, J. (2018), A proposal for an improved transportation model in CityGML, Int. Arch. Photogramm. Remote Sens. Spat. Inf. Sci, XLII-4/W10, 89--96, https://doi.org/10.5194/isprs-archives-XLII-4-W10-89-2018   
    .. [Beil2017] Beil, C., & Kolbe, T. H. (2017), CityGML and the streets of New York - A proposal for detailed street space modelling,  Int. Arch. Photogramm. Remote Sens. Spat. Inf. Sci, IV-4/W5, 9-16, https://doi.org/10.5194/isprs-annals-IV-4-W5-9-2017  
 
-|
 
 Data downloads
 ===============
 .. tip::
    * Most datasets used in this document to illustrate concepts of the CityGML 3.0 Transportation module can be downloaded from `this repository <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation>`_.
    * This includes  `basic <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation/Basic%20examples>`_ as well as `real-world <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation/Real-world%20examples>`_ examples.
+
+.. tip::
+   * The open-source converter r:trån reads road network models in the OpenDRIVE data format and transforms them to the virtual 3D city model standard CityGML (versions 2.0 and 3.0).
+   * Find more information on this converter on the corresponding `GitHub page. <https://github.com/tum-gis/rtron>`_ 
 
 Licence and disclaimer
 ==============================
@@ -424,7 +427,7 @@ TrafficSpaces and AuxiliaryTrafficSpaces
 .. admonition:: Each TrafficSpace additionally
   
    * **can** contain a *traffic direction* attribute (forwards, backwards or both).
-   * **can** contain an *occupancy* attribute.
+   * **can** contain an *occupancy* attribute (e.g. to indicate the number of pedestrians using a particular TrafficSpace at a certain time).
    * **can** have an optional *ClearanceSpace*.
   
 * Multiple *TrafficSpaces* can be linked using the predecessor / successor concept.
@@ -997,6 +1000,7 @@ Vegetation
 Concepts for modelling vegetation are provided within a specific `Vegetation module. <https://docs.ogc.org/is/20-010/20-010.html#toc40>`_
 
 * Similar to *CityFurniture*, these objects are usually represented with prototypes using implicit geometries.
+* Vegetation can be represented either as solitary vegetation objects, such as trees, bushes and ferns, or as vegetation areas that are covered by plants of a given species or a typical mixture of plant species, such as forests, steppes and wet meadows.
 * *Vegetation* models can be abstract representations derived from height, trunk diameter and crown diameter information or more realistic 3D models.
 
 .. figure:: ../figures/vegetation.PNG
@@ -1025,7 +1029,8 @@ Concepts for modelling tunnels are provided within a specific `Tunnel module. <h
 
 Dynamizer
 ================================
-The `Dynamizer module <https://docs.ogc.org/is/20-010/20-010.html#toc34>`_ provides the concepts that enable representation of time-varying data for city object properties as well as for integrating sensors with 3D city models.
+* The `Dynamizer module <https://docs.ogc.org/is/20-010/20-010.html#toc34>`_ provides the concepts that enable representation of time-varying data for city object properties as well as for integrating sensors with 3D city models.
+* In the context of street space modelling, this can be used for linking driving lanes with dynamic information on induction loops or for representing traffic light signals.
 
 .. admonition:: Definition
    :class: important

@@ -3,7 +3,7 @@
    :width: 70%
 |
 
-Road2CityGML3 - version 0.9
+Road2CityGML3 - version 1.0
 ----------------------------
 
 
