@@ -36,7 +36,7 @@ The following related publication explains concepts of the CityGML 3.0 Transport
 +++++++++++++++++++++++++++++++++++++++++++
 
 
-Do you have questions or suggesetions for improvement?  
+Do you have questions or suggestions for improvement?  
 
 .. admonition:: Please get in touch 
 
