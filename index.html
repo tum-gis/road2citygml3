@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Road2CityGML3 - version 1.0 &mdash;   documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1. Introduction" href="guideline/guideline.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#">
+            <img src="_static/road2citygml3_logo1.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="guideline/guideline.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guideline/guideline.html#general-concepts-and-definitions">2. General concepts and definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guideline/guideline.html#modelling-roads-according-to-concepts-of-citygml-3-0">3. Modelling Roads according to concepts of CityGML 3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guideline/guideline.html#modelling-examples">4. Modelling examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guideline/guideline.html#integrated-representation-of-multiple-transportation-types">5. Integrated representation of multiple transportation types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guideline/guideline.html#other-relevant-citygml-modules">6. Other relevant CityGML modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guideline/guideline.html#interactive-online-demos">7. Interactive online demos</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">More Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contact%20and%20citation/contactandcitation.html"><em class="fa fa-comments"></em> Comment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact%20and%20citation/contactandcitation.html#file-text-citation"><em class="fa fa-file-text"></em>  Citation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact%20and%20citation/contactandcitation.html#envelope-contact"><em class="fa fa-envelope"></em>  Contact</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#"></a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>Road2CityGML3 - version 1.0</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <a class="reference internal image-reference" href="_images/header.png"><img alt="_images/header.png" class="align-center" src="_images/header.png" style="width: 70%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<section id="road2citygml3-version-1-0">
+<h1>Road2CityGML3 - version 1.0<a class="headerlink" href="#road2citygml3-version-1-0" title="Permalink to this heading"></a></h1>
+<p>Guideline for modelling roads and the streetspace within semantic 3D city models using the international OGC standard City Geography Markup Language (CityGML) version 3.0.</p>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="guideline/guideline.html">1. Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#motivation">1.1. Motivation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#scope">1.2. Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#target-group">1.3. Target group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#references">1.4. References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#data-downloads">1.5. Data downloads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#licence-and-disclaimer">1.6. Licence and disclaimer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="guideline/guideline.html#general-concepts-and-definitions">2. General concepts and definitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#the-citygml-3-0-transportation-module">2.1. The CityGML 3.0 Transportation module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#semantic-concepts">2.2. Semantic concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="guideline/guideline.html#modelling-spaces-and-space-boundaries">2.2.1. Modelling spaces and space boundaries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="guideline/guideline.html#three-levels-of-granularity">2.2.2. Three levels of granularity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="guideline/guideline.html#required-and-recommended-attributes">2.2.3. Required and recommended attributes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="guideline/guideline.html#codelists">2.2.4. Codelists</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#geometric-representations">2.3. Geometric representations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="guideline/guideline.html#coordinate-reference-systems">2.3.1. Coordinate Reference Systems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="guideline/guideline.html#levels-of-detail-lod">2.3.2. Levels of Detail (LoD)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="guideline/guideline.html#adaption-to-the-terrain">2.3.3. Adaption to the terrain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="guideline/guideline.html#subtle-3d-structures-such-as-raised-medians">2.3.4. Subtle 3D structures such as raised medians</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#topological-concepts">2.4. Topological concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="guideline/guideline.html#predecessor-successor-relations">2.4.1. Predecessor / Successor relations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="guideline/guideline.html#xlinks">2.4.2. XLinks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="guideline/guideline.html#cityobjectrelations">2.4.3. CityObjectRelations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#appearance">2.5. Appearance</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="guideline/guideline.html#modelling-roads-according-to-concepts-of-citygml-3-0">3. Modelling Roads according to concepts of CityGML 3.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#roads">3.1. Roads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#tracks">3.2. Tracks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#sections-and-intersections">3.3. Sections and Intersections</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="guideline/guideline.html#sections">3.3.1. Sections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="guideline/guideline.html#intersections">3.3.2. Intersections</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#trafficspaces-and-auxiliarytrafficspaces">3.4. TrafficSpaces and AuxiliaryTrafficSpaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#trafficareas-and-auxiliarytrafficareas">3.5. TrafficAreas and AuxiliaryTrafficAreas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#clearance-spaces">3.6. Clearance Spaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#markings">3.7. Markings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#holes">3.8. Holes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#squares">3.9. Squares</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="guideline/guideline.html#modelling-examples">4. Modelling examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#individual-section-with-one-carriageway">4.1. Individual Section with one carriageway</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#individual-section-with-two-carriageways">4.2. Individual Section with two carriageways</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#three-way-intersection">4.3. Three-way Intersection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#four-way-intersection">4.4. Four-way Intersection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#small-roundabout">4.5. Small roundabout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#large-roundabout">4.6. Large roundabout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#small-side-streets">4.7. Small side streets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#dead-end">4.8. Dead end</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#motorway-entry-exit">4.9. Motorway entry / exit</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="guideline/guideline.html#integrated-representation-of-multiple-transportation-types">5. Integrated representation of multiple transportation types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#roads-and-railways">5.1. Roads and Railways</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="guideline/guideline.html#railway-level-crossing">5.1.1. Railway level crossing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="guideline/guideline.html#tramway-within-a-road">5.1.2. Tramway within a Road</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#roads-on-bridges">5.2. Roads on Bridges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#roads-through-tunnels">5.3. Roads through Tunnels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#roads-within-buildings-parking-garage">5.4. Roads within Buildings (Parking garage)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#roads-and-waterways">5.5. Roads and Waterways</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="guideline/guideline.html#other-relevant-citygml-modules">6. Other relevant CityGML modules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#cityfurniture">6.1. CityFurniture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#vegetation">6.2. Vegetation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#bridge">6.3. Bridge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#tunnel">6.4. Tunnel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guideline/guideline.html#dynamizer">6.5. Dynamizer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="guideline/guideline.html#interactive-online-demos">7. Interactive online demos</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">More Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contact%20and%20citation/contactandcitation.html"><em class="fa fa-comments"></em> Comment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact%20and%20citation/contactandcitation.html#file-text-citation"><em class="fa fa-file-text"></em>  Citation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact%20and%20citation/contactandcitation.html#envelope-contact"><em class="fa fa-envelope"></em>  Contact</a></li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="guideline/guideline.html" class="btn btn-neutral float-right" title="1. Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, This guideline is licenced under the &#34;Creative Commons Attribution 4.0 International (CC BY 4.0)&#34; licence.
+      <span class="lastupdated">Last updated on Sep 06, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
