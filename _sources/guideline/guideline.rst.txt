@@ -11,7 +11,7 @@ Motivation
 * **CityGML version 3.0** provides revised and extended concepts for modelling roads and the streetspace useful for a variety of applications.
 
 
-.. figure:: ../figures/roadmodel1.png
+.. figure:: ../figures/roadmodel1.PNG
    :align: center
    :name:  fig_brigseye
    
@@ -205,7 +205,7 @@ Adaption to the terrain
 * Triangles of this new terrain, that are part of individual *(Auxiliary)TrafficAreas*, can then be used to represent the geometry of those surfaces.
 
 
-.. figure:: ../figures/adaptiontoterrain.png
+.. figure:: ../figures/adaptiontoterrain.PNG
    :align: center
    :name:  fig_terrain
    
@@ -218,7 +218,7 @@ Subtle 3D structures such as raised medians
 * It is recommended to derive these structures from 2D data by extruding respective *(Auxiliary)TrafficAreas* by a certain amount (e.g. 0.15m).
 * MultiSurface geometries are recommended for these objects.
 
-.. figure:: ../figures/kerbstone.png
+.. figure:: ../figures/kerbstone.PNG
    :align: center
    :name:  fig_kerbstone
    
