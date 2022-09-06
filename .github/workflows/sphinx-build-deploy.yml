@@ -16,7 +16,7 @@ jobs:
       uses: actions/checkout@v2.3.4
     -
       name: Sphinx build - html
-      run: docker run --rm -v $PWD:/docs bwibo/sphinx-rtd make html
+      run: docker run --rm -v $PWD/src:/docs bwibo/sphinx-rtd make html
     -
       name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@4.0.0
