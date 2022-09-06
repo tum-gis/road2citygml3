@@ -10,7 +10,7 @@
 
 Guideline for modelling roads and the streetspace within semantic 3D city models using the international OGC standard City Geography Markup Language (CityGML) version 3.0.
 
-View the documentation [here](https://www.3dcitydb.org/3dcitydb/fileadmin/public/road2citygml3/).
+View the documentation [here](https://tum-gis.github.io/road2citygml3/).
 
 Recommendations are related to the conceptual model of the Open Geospatial Consortium (OGC) standard [CityGML version 3.0](https://docs.ogc.org/is/20-010/20-010.html).
 
