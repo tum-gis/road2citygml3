@@ -3,7 +3,7 @@ name: sphinx-build-deploy
 on:
   push:
     branches:
-    - master
+    - main
 
   pull_request:
 
