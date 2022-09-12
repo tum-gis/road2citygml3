@@ -7,7 +7,7 @@ Motivation
 * LoD 1 and LoD 2 models of buildings are available for a `large number of cities and countries <https://github.com/OloOcki/awesome-citygml>`_. 
 * Data gathering methods such as Mobile Mapping Systems and emerging applications such as urban digital twins begin to shift this focus towards models of road infrastructure.
 * Several cities (such as New York City, Melbourne, Munich or Singapore) have detailed data on roads and the street space available (usually within an ArcGIS or QGIS environment). However, this data is often structured in different ways (semantically and geometrically). Modelling this data within a common representation framework allows the immediate usage of the data with the same tools for a number of applications. 
-* While standards such as GDF or OpenDRIVE focus on linear (graph-based) or parametric representation of roads, CityGML 3.0 allows linear, polygonal as well as volumetric representations integrated within a consistent semantic 3D city model including models of buildings, vegetation, city furniture, tunnels or bridges. 
+* While standards such as GDF or OpenDRIVE focus on linear (graph-based) or parametric representations of roads, CityGML 3.0 allows linear, polygonal as well as volumetric representations integrated within a consistent semantic 3D city model including models of buildings, vegetation, city furniture, tunnels or bridges. 
 * **CityGML version 3.0** provides revised and extended concepts for modelling roads and the streetspace useful for a variety of applications.
 
 
@@ -192,7 +192,7 @@ Levels of Detail (LoD)
 -------------------------
 
 * The CityGML Conceptual Model differentiates four consecutive Levels of Detail (LOD 0-3).
-* CityGML datasets can — but do not have to — contain multiple geometries for each object in different LODs simultaneously.
+* CityGML datasets can but do not have to contain multiple geometries for each object in different LODs simultaneously.
 * Levels of Detail are no longer associated with the degree of semantic decomposition of city objects and refer to the spatial representations only. 
 * In order to maintain the ability for a semantic decomposition of transportation objects, three levels of granularity are introduced.
 
