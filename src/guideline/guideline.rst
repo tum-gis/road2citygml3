@@ -5,17 +5,16 @@ Motivation
 ==========
 * The **City Geography Markup Language (CityGML)** is an international OGC standard for the representation and exchange of virtual 3D city and landscape models.
 * LoD 1 and LoD 2 models of buildings are available for a `large number of cities and countries <https://github.com/OloOcki/awesome-citygml>`_. 
-* Data gathering methods such as Mobile Mapping Systems and emerging applications such as urban digital twins begin to shift this focus towards models of road infrastructure.
+* Data gathering methods such as Mobile Mapping Systems and emerging applications such as **urban digital twins** begin to shift this focus towards models of **road infrastructure**.
 * Several cities (such as New York City, Melbourne, Munich or Singapore) have detailed data on roads and the street space available (usually within an ArcGIS or QGIS environment). However, this data is often structured in different ways (semantically and geometrically). Modelling this data within a common representation framework allows the immediate usage of the data with the same tools for a number of applications. 
-* While standards such as GDF or OpenDRIVE focus on linear (graph-based) or parametric representations of roads, CityGML 3.0 allows linear, polygonal as well as volumetric representations integrated within a consistent semantic 3D city model including models of buildings, vegetation, city furniture, tunnels or bridges. 
-* **CityGML version 3.0** provides revised and extended concepts for modelling roads and the streetspace useful for a variety of applications.
+* While standards such as GDF or OpenDRIVE focus on linear (graph-based) or parametric representations of roads, **CityGML 3.0** allows linear, polygonal as well as volumetric (explicit) geometries integrated within a **consistent semantic 3D city model** including models of buildings, vegetation, city furniture, tunnels or bridges. 
+* CityGML version 3.0 provides **revised and extended concepts** for modelling roads and the streetspace presented and explained in this documentation.
 
-
-.. figure:: ../figures/roadmodel1.PNG
+.. figure:: ../figures/roadmodel.PNG
    :align: center
    :name:  fig_brigseye
    
-   Bird's eye view of a semantic 3D city and streetspace model.
+   Digital 3D streetspace model including road infrastructure, city furniture, vegetation and buildings.
 
 Scope
 =====
@@ -127,7 +126,7 @@ For defining different levels of semantic decomposition for transportation objec
    * In **granularity 'lane'** each individual lane (including driving lanes for vehicles) are modelled separately. 
 
 * These three levels of granularity can be modelled geometrically using linear or polygonal representations (corresponding volumetric representations can be created by extruding the polygonal surface representation). 
-* Examples for these three levels of granularity for linear as well as polygonal representations are given in :numref:`granularity`. Blue lines represent pedestrian paths. Green lines indicate bicycle lanes.
+* Examples for these three levels of granularity for polygonal (surface-based) representations are given in :numref:`granularity`. 
 * For the linear representations one centerline is used to model the entire *Road*. In granularity 'way' individual lines are used for carriageways and pedestrian or bicycle paths. In granularity 'lane' each driving lane is modelled with an individual linear representation. 
 
 
@@ -136,7 +135,7 @@ For defining different levels of semantic decomposition for transportation objec
    :align: center
    :name:  fig_granularity
    
-   Three levels of granularity for linear and polygonal representations of *Roads* (lane (left), way (middle), area (right)).
+   Three levels of granularity (lane, way and area) for representating *Roads*. 
 
 
 
