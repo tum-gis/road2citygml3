@@ -453,10 +453,10 @@ TrafficAreas and AuxiliaryTrafficAreas
    * **can** contain multiple *usage* attributes indicating which types of traffic members use certain surfaces (e.g. cars, pedestrians or bicyclists).
    * **should not** have overlapping geometries but rather be represented with separate (Auxiliary)TrafficAreas with multiple *function* attributes. 
 
-.. _fig_sections:
+.. _fig_sections1:
 .. figure:: ../figures/oneanttwoway_sections.PNG
    :align: center
-   :name:  fig_section_examples1
+   :name:  fig_section_examples2
 
    *Section* with one carriageway (left) and *Section* with two carriageways (right) decomposed into individual *(Auxiliary)TrafficAreas*. 
 
@@ -466,6 +466,114 @@ TrafficAreas and AuxiliaryTrafficAreas
    
 
    *TrafficAreas* colored according to corresponding functions (left). Multiple functions per *TrafficArea* are possible. Examples for *(Auxiliary)TrafficAreas* (right). 
+
+The following tables provide recommendations for *AuxiliaryTrafficAreas* and *TrafficAreas* that should be explicitly modelled by providing respective *usage* and *function* attributes. Multiple *usage* and *function* attributes can be modelled per *AuxiliaryTrafficAreas* and *TrafficAreas*.  
+Function describes, if the object for example may be a driving lane, a footpath, or a cycle lane, while the usage attribute indicates which modes of transportation can use it (e.g. pedestrian, car, tram).
+
+.. list-table:: Recommended TrafficArea 'usage' attributes.
+   :widths: 40 40 
+   :header-rows: 1
+
+   * - citygml_usage (text)
+     - citygml_usage (code)
+     
+   * - pedestrian
+     - 1
+   * - car
+     - 2
+   * - truck
+     - 3
+   * - bus, taxi
+     - 4
+   * - train
+     - 5
+   * - bicycle
+     - 6
+   * - motorcycle
+     - 7
+   * - tram
+     - 8
+   * - emergency
+     - 15
+
+.. list-table:: Recommended TrafficArea 'function' attributes.
+   :widths: 25 25 
+   :header-rows: 1
+
+   * - citygml_function (text)
+     - citygml_function (code)
+     
+   * - driving_lane
+     - 1
+   * - footpath
+     - 2
+   * - cyclepath
+     - 3
+   * - combined foot-/cyclepath
+     - 4
+   * - square
+     - 5
+   * - parking_lay_by
+     - 7
+   * - rail
+     - 8
+   * - rail_road_combined
+     - 9
+   * - crosswalk
+     - 20
+   * - bus_lay_by
+     - 32
+   * - motorway
+     - 33
+   * - emergency_lane
+     - 36
+   * - unknown
+     - 9999
+
+.. list-table:: Recommended AuxiliaryTrafficArea 'function' attributes.
+   :widths: 25 25 
+   :header-rows: 1
+
+   * - citygml_function (text)
+     - citygml_function (code)
+     
+   * - shoulder
+     - 1010
+   * - green_area
+     - 1020
+   * - kerbstone
+     - 1220
+   * - restricted
+     - 1240
+   * - traffic_island
+     - 1300
+   
+The attribute *surfaceMaterial* specifies the type of pavement and can be used by *AuxiliaryTrafficAreas* and *TrafficAreas*. 
+
+
+.. list-table:: Recommended AuxiliaryTrafficArea and TrafficArea 'surfaceMaterial' attributes.
+   :widths: 25 25 
+   :header-rows: 1
+
+   * - citygml_surfaceMaterial (text)
+     - citygml_surfaceMaterial (code)
+     
+   * - asphalt
+     - 1
+   * - concrete
+     - 2
+   * - pavement
+     - 3
+   * - cobblestone
+     - 4
+   * - gravel
+     - 5
+   * - soil
+     - 8
+   * - sand
+     - 9
+   * - grass
+     - 10
 
 Clearance Spaces
 ===========================
@@ -495,11 +603,11 @@ Markings
 .. admonition:: Each Marking
   
    * **must** contain a unique *gml:id* attribute.
+   * **should** contain a *class* attribute indicating its type.
    * **should** be represented as additional surfaces independent of level of *granularity*. 
    * **should** be represented with individual objects for each *Marking*. 
    * **should** be represented using polygonal geometries depicting the actual shape of each *Marking*.
    * **can** span over multiple *(Auxiliary)TrafficAreas*.
-   * **can** contain an *class* attribute indicating its type.
    * **can** be linked to a corresponding *TrafficArea* via a *CityObjectRelation* (e.g. to indicate the validity of a marking for a certain lane).
   
 * Individual lines part of a dashed line e.g. can also be aggregated.
@@ -511,6 +619,43 @@ Markings
    
    
    Different types of *Markings* including stop lines, dashed lines, arrows and zebra crossings.
+
+
+.. list-table:: Recommended Marking 'class' attributes.
+   :widths: 40 40 
+   :header-rows: 1
+
+   * - citygml_class (text)
+     - citygml_class (code)
+     
+   * - road_marking
+     - 11
+   * - road_marking_direction
+     - 12
+   * - road_marking_lane
+     - 13
+   * - road_marking_restricted
+     - 14
+   * - road_marking_crosswalk
+     - 15
+   * - road_marking_stop
+     - 16
+   * - arrowRight
+     - 121
+   * - arrowLeft
+     - 122
+   * - arrowStraight
+     - 123
+   * - arrowStraightRight
+     - 124
+   * - arrowStraightLeft
+     - 125
+   * - road_marking_lane_broken
+     - 131
+   * - road_marking_lane_solid
+     - 132
+   * - symbol
+     - 140
 
 Holes
 ==========================================
