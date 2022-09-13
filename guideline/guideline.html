@@ -187,7 +187,7 @@
 <li><p>The <strong>focus of this document is on models of Roads</strong> and their parts (including individual driving lanes, pedestrian sidewalks, bike lanes, etc.).</p></li>
 <li><p>The CityGML conceptual model allows various geometrical representations for objects such as transportation infrastructure (e.g. linear, volumetric or point clouds). The modelling examples given in this document <strong>focus on surface-based polygonal representations</strong> using explicit geo-referenced geometries.</p></li>
 <li><p>Data and modelling examples in this document are based on the <strong>GML encoding</strong> of CityGML.</p></li>
-<li><p>Most <strong>Example datasets</strong> used to illustrate these modelling concepts are provided as Open Data.</p></li>
+<li><p>Most <strong>Example datasets</strong> presented in section 4 are provided as Open Data.</p></li>
 <li><p>In addition to modelling concepts, this document provides (some) data recording recommendations. However, this is not a data recording manual.</p></li>
 <li><p>This document can be seen as an addition and extension to the  <a class="reference external" href="https://docs.ogc.org/guides/20-066.html">CityGML User Guide</a> with a specific focus on modelling roads.</p></li>
 </ul>
@@ -392,12 +392,6 @@
 <li><p>For adapting this data to the terrain it is recommended to create a terrain with breaklines of individual <em>(Auxiliary)TrafficAreas</em>.</p></li>
 <li><p>Triangles of this new terrain, that are part of individual <em>(Auxiliary)TrafficAreas</em>, can then be used to represent the geometry of those surfaces.</p></li>
 </ul>
-<figure class="align-center" id="fig-terrain">
-<img alt="../_images/adaptiontoterrain.PNG" src="../_images/adaptiontoterrain.PNG" />
-<figcaption>
-<p><span class="caption-number">Figure 4 </span><span class="caption-text">Adaption of 2D <em>TrafficAreas</em> to the terrain using breaklines.</span><a class="headerlink" href="#fig-terrain" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
 </section>
 <section id="subtle-3d-structures-such-as-raised-medians">
 <h3><span class="section-number">2.3.4. </span>Subtle 3D structures such as raised medians<a class="headerlink" href="#subtle-3d-structures-such-as-raised-medians" title="Permalink to this heading"></a></h3>
@@ -409,7 +403,7 @@
 <figure class="align-center" id="fig-kerbstone">
 <img alt="../_images/kerbstone.PNG" src="../_images/kerbstone.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 5 </span><span class="caption-text">Modelling raised sidewalks, kerbstones or medians.</span><a class="headerlink" href="#fig-kerbstone" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 4 </span><span class="caption-text">Modelling raised sidewalks, kerbstones or medians.</span><a class="headerlink" href="#fig-kerbstone" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -423,12 +417,6 @@
 <li><p>This is especially recommended for linear representations of <em>TrafficSpaces</em> in <em>granularity ‘lane’</em> (e.g. to support routing applications).</p></li>
 <li><p>However, this is also available for other geometric representations and granularities of <em>TrafficSpaces</em>.</p></li>
 </ul>
-<figure class="align-center" id="fig-predsuc">
-<img alt="../_images/oredecessorsuccessor.PNG" src="../_images/oredecessorsuccessor.PNG" />
-<figcaption>
-<p><span class="caption-number">Figure 6 </span><span class="caption-text">Predecessor and successor relations of linear <em>TrafficSpace</em> representations.</span><a class="headerlink" href="#fig-predsuc" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
 </section>
 <section id="xlinks">
 <h3><span class="section-number">2.4.2. </span>XLinks<a class="headerlink" href="#xlinks" title="Permalink to this heading"></a></h3>
@@ -462,7 +450,7 @@
 <figure class="align-center" id="fig-appearance">
 <img alt="../_images/appearance.PNG" src="../_images/appearance.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 7 </span><span class="caption-text">Different appearances for road surfaces. Synthetic textures (left). Results of a solar irradiation simulation (right).</span><a class="headerlink" href="#fig-appearance" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 5 </span><span class="caption-text">Different appearances for road surfaces. Synthetic textures (left). Results of a solar irradiation simulation (right).</span><a class="headerlink" href="#fig-appearance" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -493,12 +481,12 @@
 <li><p>In case a <em>Road</em> does not have a name, logical aggregations of underlying <em>Sections</em> and <em>Intersections</em> should be performed.</p></li>
 <li><p>Multiple <em>Roads</em> can share the same <em>Intersection</em>.</p></li>
 <li><p>Long uninterrupted <em>Roads</em> (e.g. freeways or motorways) can be segmented into multiple <em>Sections</em> directly connected to each other (without intermediate <em>Intersections</em>).</p></li>
-<li><p><a class="reference internal" href="#victoriastreet"><span class="std std-numref">Figure 8</span></a> shows all surfaces belonging to a <em>Road</em> object for “Victoria Street” in Melbourne highlighted in purple.</p></li>
+<li><p><a class="reference internal" href="#victoriastreet"><span class="std std-numref">Figure 6</span></a> shows all surfaces belonging to a <em>Road</em> object for “Victoria Street” in Melbourne highlighted in purple.</p></li>
 </ul>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id3">
 <span id="victoriastreet"></span><img alt="../_images/victoria_street.PNG" src="../_images/victoria_street.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 8 </span><span class="caption-text">One <em>Road</em> object (Victoria Street in Melbourne) consisting of multiple <em>Sections</em> and <em>Intersections</em>.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 6 </span><span class="caption-text">One <em>Road</em> object (Victoria Street in Melbourne) consisting of multiple <em>Sections</em> and <em>Intersections</em>.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -517,10 +505,10 @@
 <li><p><strong>can</strong> contain a <em>class</em> attribute.</p></li>
 </ul>
 </div>
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id4">
 <span id="fig-tracks"></span><img alt="../_images/tracks.PNG" src="../_images/tracks.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 9 </span><span class="caption-text"><em>TrafficAreas</em> part of Tracks within a park surrounded by <em>TrafficAreas</em> part of <em>Roads</em>.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 7 </span><span class="caption-text"><em>TrafficAreas</em> part of Tracks within a park.</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -536,10 +524,10 @@
 <li><p><strong>do not</strong> need to alternate. In some cases it might be useful to have individual <em>Sections</em> directly next to each other.</p></li>
 </ul>
 </div>
-<figure class="align-center" id="fig-sections-intersections">
+<figure class="align-center" id="fig-sections-intersections1">
 <img alt="../_images/sections_intersections1.PNG" src="../_images/sections_intersections1.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 10 </span><span class="caption-text">Segmentation of large <em>Road</em> networks into individual <em>Sections</em> (orange) and <em>Intersections</em> (blue). <em>Sections</em> and <em>Intersections</em> belonging to a specific <em>Road</em> called ‘Victoria Street’ are surrounded with a purple line.</span><a class="headerlink" href="#fig-sections-intersections" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 8 </span><span class="caption-text">Segmentation of large <em>Road</em> networks into individual <em>Sections</em> (orange) and <em>Intersections</em> (blue). <em>Sections</em> and <em>Intersections</em> belonging to a specific <em>Road</em> called ‘Victoria Street’ are surrounded with a purple line.</span><a class="headerlink" href="#fig-sections-intersections1" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <section id="sections">
@@ -557,7 +545,7 @@
 <figure class="align-center" id="fig-section-examples">
 <span id="fig-sections"></span><img alt="../_images/section_examples.PNG" src="../_images/section_examples.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 11 </span><span class="caption-text">Typical examples of <em>Sections</em>.</span><a class="headerlink" href="#fig-section-examples" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 9 </span><span class="caption-text">Typical examples of <em>Sections</em>.</span><a class="headerlink" href="#fig-section-examples" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -579,16 +567,16 @@
 <li><p>Depending on intended use-cases, different definitions of the extent of individual <em>Intersections</em> are possible.</p></li>
 <li><p>It is recommended to model <em>Intersections</em> with the minimal extent of surfaces shared by multiple <em>Roads</em>. However, it is not prohibited to expand <em>Intersection</em> objects into adjacent <em>Sections</em>.</p></li>
 </ul>
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id5">
 <span id="fig-intersectiondef"></span><img alt="../_images/intersectiondef.PNG" src="../_images/intersectiondef.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 12 </span><span class="caption-text">Different possible definitions for the extent of an <em>Intersection</em> (minimal extent recommended).</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 10 </span><span class="caption-text">Different possible definitions for the extent of an <em>Intersection</em> (minimal extent recommended).</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id6">
 <span id="fig-intersections"></span><img alt="../_images/intersection_examples.PNG" src="../_images/intersection_examples.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 13 </span><span class="caption-text">Typical examples of <em>Intersections</em>.</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 11 </span><span class="caption-text">Typical examples of <em>Intersections</em>.</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -633,10 +621,10 @@
 <li><p>In Germany, for example, car driving lanes typically have a free space height of 4.5 m and sidewalks of 2.5 m. This can be modelled using volumetric geometries.</p></li>
 <li><p><em>(Auxiliary)TrafficSpaces</em> do not have to be represented geometrically but should be bounded towards the ground by corresponding <em>(Auxiliary)TrafficAreas</em>.</p></li>
 </ul>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id7">
 <span id="fig-trafficspace"></span><img alt="../_images/trafficspace.PNG" src="../_images/trafficspace.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 14 </span><span class="caption-text">Volumetric representations of <em>TrafficSpaces</em> with different heights according to respective functions (left), <em>TrafficSpaces</em> underneath Building underpasses (right).</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 12 </span><span class="caption-text">Volumetric representations of <em>TrafficSpaces</em> with different heights according to respective functions (left), <em>TrafficSpaces</em> underneath Building underpasses (right).</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -660,16 +648,16 @@
 <li><p><strong>should not</strong> have overlapping geometries but rather be represented with separate (Auxiliary)TrafficAreas with multiple <em>function</em> attributes.</p></li>
 </ul>
 </div>
-<figure class="align-center" id="id7">
-<span id="fig-trafficarea1"></span><img alt="../_images/roads_sections_intersections_trafficareas.PNG" src="../_images/roads_sections_intersections_trafficareas.PNG" />
+<figure class="align-center" id="fig-section-examples1">
+<span id="id1"></span><img alt="../_images/oneanttwoway_sections.PNG" src="../_images/oneanttwoway_sections.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 15 </span><span class="caption-text">Further decomposition of <em>Sections</em> and <em>Intersections</em> into individual <em>(Auxiliary)TrafficAreas</em>.</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 13 </span><span class="caption-text"><em>Section</em> with one carriageway (left) and <em>Section</em> with two carriageways (right) decomposed into individual <em>(Auxiliary)TrafficAreas</em>.</span><a class="headerlink" href="#fig-section-examples1" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id8">
 <span id="fig-trafficarea2"></span><img alt="../_images/trafficareas_mult.PNG" src="../_images/trafficareas_mult.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 16 </span><span class="caption-text"><em>TrafficAreas</em> colored according to corresponding functions (left). Multiple functions per <em>TrafficArea</em> are possible. Examples for <em>(Auxiliary)TrafficAreas</em> (right).</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 14 </span><span class="caption-text"><em>TrafficAreas</em> colored according to corresponding functions (left). Multiple functions per <em>TrafficArea</em> are possible. Examples for <em>(Auxiliary)TrafficAreas</em> (right).</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -714,7 +702,7 @@
 <figure class="align-center" id="id9">
 <span id="fig-markings"></span><img alt="../_images/markings.PNG" src="../_images/markings.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 17 </span><span class="caption-text">Different types of <em>Markings</em> including stop lines, dashed lines and arrows.</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 15 </span><span class="caption-text">Different types of <em>Markings</em> including stop lines, dashed lines, arrows and zebra crossings.</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -741,7 +729,7 @@
 <figure class="align-center" id="fig-road-hole">
 <img alt="../_images/manhole.PNG" src="../_images/manhole.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 18 </span><span class="caption-text">Manhole covers modelled as <em>Holes</em>.</span><a class="headerlink" href="#fig-road-hole" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 16 </span><span class="caption-text">Manhole covers modelled as <em>Holes</em>.</span><a class="headerlink" href="#fig-road-hole" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -764,13 +752,13 @@
 <figure class="align-center" id="id10">
 <span id="fig-square"></span><img alt="../_images/square.PNG" src="../_images/square.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 19 </span><span class="caption-text">A parking lot segmented into individual <em>TrafficAreas</em> (parking slots and driving surfaces) modelled as a <em>Square</em>.</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 17 </span><span class="caption-text">A parking lot segmented into individual <em>TrafficAreas</em> (parking slots and driving surfaces) modelled as a <em>Square</em>.</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id11">
 <span id="fig-plaza"></span><img alt="../_images/plaza.PNG" src="../_images/plaza.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 20 </span><span class="caption-text">A plaza modelled as a <em>Square</em> surrounded by <em>Tracks</em>.</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 18 </span><span class="caption-text">A plaza modelled as a <em>Square</em> surrounded by <em>Tracks</em>.</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -787,7 +775,7 @@
 <figure class="align-center" id="fig-section1way">
 <img alt="../_images/section_1carriageway.PNG" src="../_images/section_1carriageway.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 21 </span><span class="caption-text">Individual Section with one carriageway.</span><a class="headerlink" href="#fig-section1way" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 19 </span><span class="caption-text">Individual Section with one carriageway.</span><a class="headerlink" href="#fig-section1way" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <div class="literal-block-wrapper docutils container" id="id12">
@@ -827,7 +815,7 @@
 <figure class="align-center" id="fig-section2ways">
 <img alt="../_images/section_2carriageways.PNG" src="../_images/section_2carriageways.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 22 </span><span class="caption-text">Individual Section with two  carriageways.</span><a class="headerlink" href="#fig-section2ways" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 20 </span><span class="caption-text">Individual Section with two  carriageways.</span><a class="headerlink" href="#fig-section2ways" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <div class="literal-block-wrapper docutils container" id="id13">
@@ -883,7 +871,7 @@
 <figure class="align-center" id="fig-3way">
 <img alt="../_images/3way.PNG" src="../_images/3way.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 23 </span><span class="caption-text">Intersection with three adjacent Sections.</span><a class="headerlink" href="#fig-3way" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 21 </span><span class="caption-text">Intersection with three adjacent Sections.</span><a class="headerlink" href="#fig-3way" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <div class="literal-block-wrapper docutils container" id="id14">
@@ -929,7 +917,7 @@
 <figure class="align-center" id="fig-4way">
 <img alt="../_images/4way.PNG" src="../_images/4way.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 24 </span><span class="caption-text">Intersection with four adjacent Sections.</span><a class="headerlink" href="#fig-4way" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 22 </span><span class="caption-text">Intersection with four adjacent Sections.</span><a class="headerlink" href="#fig-4way" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <div class="literal-block-wrapper docutils container" id="id15">
@@ -985,7 +973,7 @@
 <figure class="align-center" id="fig-roundabout">
 <img alt="../_images/roundabout.PNG" src="../_images/roundabout.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 25 </span><span class="caption-text">Small Roundabout modelled as <em>Intersection</em> with four adjacent <em>Sections</em>.</span><a class="headerlink" href="#fig-roundabout" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 23 </span><span class="caption-text">Small Roundabout modelled as <em>Intersection</em> with four adjacent <em>Sections</em>.</span><a class="headerlink" href="#fig-roundabout" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -993,12 +981,12 @@
 <h2><span class="section-number">4.6. </span>Large roundabout<a class="headerlink" href="#large-roundabout" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>While it is possible to model a large roundabout as a single <em>Intersection</em> it might be beneficial to divide large roundabouts into multiple <em>Sections</em> and <em>Intersections</em>.</p></li>
-<li><p><a class="reference internal" href="#id1"><span class="std std-numref">Figure 26</span></a> shows an example of a large roundabout segmented into multiple <em>Sections</em> (orange) and <em>Intersection</em> (blue) with corresponding <em>(Auxiliary)TrafficAreas</em> in granularity ‘way’.</p></li>
+<li><p><a class="reference internal" href="#id2"><span class="std std-numref">Figure 24</span></a> shows an example of a large roundabout segmented into multiple <em>Sections</em> (orange) and <em>Intersection</em> (blue) with corresponding <em>(Auxiliary)TrafficAreas</em> in granularity ‘way’.</p></li>
 </ul>
 <figure class="align-center" id="fig-large-roundabout">
-<span id="id1"></span><img alt="../_images/large_roundabout.png" src="../_images/large_roundabout.png" />
+<span id="id2"></span><img alt="../_images/large_roundabout.png" src="../_images/large_roundabout.png" />
 <figcaption>
-<p><span class="caption-number">Figure 26 </span><span class="caption-text">A large roundabout segmented into multiple <em>Sections</em> (orange) and <em>Intersections</em> (blue).</span><a class="headerlink" href="#fig-large-roundabout" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 24 </span><span class="caption-text">A large roundabout segmented into multiple <em>Sections</em> (orange) and <em>Intersections</em> (blue).</span><a class="headerlink" href="#fig-large-roundabout" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -1012,7 +1000,7 @@
 <figure class="align-center" id="fig-smallstreets">
 <img alt="../_images/smallsections.PNG" src="../_images/smallsections.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 27 </span><span class="caption-text">Small side street modelled as individual Sections directly connected to larger Sections.</span><a class="headerlink" href="#fig-smallstreets" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 25 </span><span class="caption-text">Small side street modelled as individual Sections directly connected to larger Sections.</span><a class="headerlink" href="#fig-smallstreets" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -1020,12 +1008,12 @@
 <h2><span class="section-number">4.8. </span>Dead end<a class="headerlink" href="#dead-end" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>Dead ends should be modelled as independent <em>Sections</em></p></li>
-<li><p>While dead ends can be connected to another <em>Section</em> directly, it is recommended to connect dead ends with an <em>Intersection</em> as depicted in figure <a class="reference internal" href="#deadend"><span class="std std-numref">Figure 28</span></a>.</p></li>
+<li><p>While dead ends can be connected to another <em>Section</em> directly, it is recommended to connect dead ends with an <em>Intersection</em> as depicted in figure <a class="reference internal" href="#deadend"><span class="std std-numref">Figure 26</span></a>.</p></li>
 </ul>
 <figure class="align-center" id="deadend-png">
 <span id="deadend"></span><img alt="../_images/deadend.PNG" src="../_images/deadend.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 28 </span><span class="caption-text">Dead end modelled as individual Section.</span><a class="headerlink" href="#deadend-png" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 26 </span><span class="caption-text">Dead end modelled as individual Section.</span><a class="headerlink" href="#deadend-png" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -1033,12 +1021,12 @@
 <h2><span class="section-number">4.9. </span>Motorway entry / exit<a class="headerlink" href="#motorway-entry-exit" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>Motorway entries and exits should be modelled as individual <em>Sections</em>.</p></li>
-<li><p><a class="reference internal" href="#entryexit"><span class="std std-numref">Figure 29</span></a> shows a possible segmentation of multiple motorway entries and exits into several <em>Sections</em>.</p></li>
+<li><p><a class="reference internal" href="#entryexit"><span class="std std-numref">Figure 27</span></a> shows a possible segmentation of multiple motorway entries and exits into several <em>Sections</em>.</p></li>
 </ul>
 <figure class="align-center" id="fig-entry-exit">
 <span id="entryexit"></span><img alt="../_images/entry_exit1.PNG" src="../_images/entry_exit1.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 29 </span><span class="caption-text">Motorway entries and exits segmented into multiple <em>Sections</em>.</span><a class="headerlink" href="#fig-entry-exit" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 27 </span><span class="caption-text">Motorway entries and exits segmented into multiple <em>Sections</em>.</span><a class="headerlink" href="#fig-entry-exit" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -1066,7 +1054,7 @@
 <figure class="align-center" id="id16">
 <span id="levelcrossing"></span><img alt="../_images/levelcrossing2.PNG" src="../_images/levelcrossing2.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 30 </span><span class="caption-text">Level crossing of a <em>Road</em> and a <em>Railway</em> object sharing an <em>Intersection</em>.</span><a class="headerlink" href="#id16" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 28 </span><span class="caption-text">Level crossing of a <em>Road</em> and a <em>Railway</em> object sharing an <em>Intersection</em>.</span><a class="headerlink" href="#id16" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -1079,13 +1067,13 @@
 <figure class="align-center" id="id17">
 <img alt="../_images/tramway.PNG" src="../_images/tramway.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 31 </span><span class="caption-text">A tramway within a <em>Road</em>. Surfaces of the tramway are <em>TrafficAreas</em> with multiple functions linked to respective <em>Intersections</em>.</span><a class="headerlink" href="#id17" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 29 </span><span class="caption-text">A tramway within a <em>Road</em>. Surfaces of the tramway are <em>TrafficAreas</em> with multiple functions linked to respective <em>Intersections</em>.</span><a class="headerlink" href="#id17" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id18">
 <img alt="../_images/tramway1.PNG" src="../_images/tramway1.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 32 </span><span class="caption-text">Object diagram of a tramway surface part of multiple <em>Intersections</em>.</span><a class="headerlink" href="#id18" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 30 </span><span class="caption-text">Object diagram of a tramway surface part of multiple <em>Intersections</em>.</span><a class="headerlink" href="#id18" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -1094,25 +1082,25 @@
 <h2><span class="section-number">5.2. </span>Roads on Bridges<a class="headerlink" href="#roads-on-bridges" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p><em>Road</em> surfaces on a <em>Bridge</em> can be modelled as <em>TrafficAreas</em> (as part of a <em>Road</em>) and <em>RoofSurfaces</em> (as part of a <em>Bridge</em>) at the same time.</p></li>
-<li><p>In the example shown in <a class="reference internal" href="#cityobjectrelation1"><span class="std std-numref">Figure 33</span></a>, <em>TrafficArea 6</em> and <em>RoofSurface 2</em> represent the same (geometric) surface but are part of different (semantic) objects.</p></li>
-<li><p>Using CityObjectRelations in order to express this relation is shown in <a class="reference internal" href="#cityobjectrelation2"><span class="std std-numref">Figure 34</span></a>.</p></li>
+<li><p>In the example shown in <a class="reference internal" href="#cityobjectrelation1"><span class="std std-numref">Figure 31</span></a>, <em>TrafficArea 6</em> and <em>RoofSurface 2</em> represent the same (geometric) surface but are part of different (semantic) objects.</p></li>
+<li><p>Using CityObjectRelations in order to express this relation is shown in <a class="reference internal" href="#cityobjectrelation2"><span class="std std-numref">Figure 32</span></a>.</p></li>
 </ul>
 <figure class="align-center" id="id19">
 <span id="cityobjectrelation1"></span><img alt="../_images/road_bridge.PNG" src="../_images/road_bridge.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 33 </span><span class="caption-text">Shared surfaces by Roads and Bridges using CityObjectRelations</span><a class="headerlink" href="#id19" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 31 </span><span class="caption-text">Shared surfaces by Roads and Bridges using CityObjectRelations</span><a class="headerlink" href="#id19" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id20">
 <span id="cityobjectrelation2"></span><img alt="../_images/cityobjectrelation.PNG" src="../_images/cityobjectrelation.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 34 </span><span class="caption-text"><em>CityObjectRelation</em> between a <em>RoofSurface</em> and a <em>TrafficArea</em> sharing the same part of a Road on a Bridge.</span><a class="headerlink" href="#id20" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 32 </span><span class="caption-text"><em>CityObjectRelation</em> between a <em>RoofSurface</em> and a <em>TrafficArea</em> sharing the same part of a Road on a Bridge.</span><a class="headerlink" href="#id20" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id21">
 <img alt="../_images/roadbridge.PNG" src="../_images/roadbridge.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 35 </span><span class="caption-text">TrafficAreas part of a Road are simultaneously modelled as RoofSurfaces part of a Bridge.</span><a class="headerlink" href="#id21" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 33 </span><span class="caption-text">TrafficAreas part of a Road are simultaneously modelled as RoofSurfaces part of a Bridge.</span><a class="headerlink" href="#id21" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -1124,7 +1112,7 @@
 <figure class="align-center" id="fig-raodtunnel">
 <img alt="../_images/roadintunnel.PNG" src="../_images/roadintunnel.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 36 </span><span class="caption-text">Roads within a 3D model of a Tunnel.</span><a class="headerlink" href="#fig-raodtunnel" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 34 </span><span class="caption-text">Roads within a 3D model of a Tunnel.</span><a class="headerlink" href="#fig-raodtunnel" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -1137,13 +1125,13 @@
 <figure class="align-center" id="fig-garage">
 <img alt="../_images/garage.PNG" src="../_images/garage.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 37 </span><span class="caption-text">Individual CityFurniture objects with different functions part of a CityObjectGroup.</span><a class="headerlink" href="#fig-garage" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 35 </span><span class="caption-text">Individual CityFurniture objects with different functions part of a CityObjectGroup.</span><a class="headerlink" href="#fig-garage" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="fig-garage1">
 <img alt="../_images/garage1.PNG" src="../_images/garage1.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 38 </span><span class="caption-text">Modelling shared surfaces by Buildings and Roads (e.g. within a parking garage) using CityObjectRelations.</span><a class="headerlink" href="#fig-garage1" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 36 </span><span class="caption-text">Modelling shared surfaces by Buildings and Roads (e.g. within a parking garage) using CityObjectRelations.</span><a class="headerlink" href="#fig-garage1" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -1161,7 +1149,7 @@
 <figure class="align-center" id="fig-streetspace">
 <img alt="../_images/streetspace.PNG" src="../_images/streetspace.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 39 </span><span class="caption-text">Components of a semantic 3D city model relevant for streetspace applications (CityGML model visualized in the Unreal Engine).</span><a class="headerlink" href="#fig-streetspace" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 37 </span><span class="caption-text">Components of a semantic 3D city model relevant for streetspace applications (CityGML model visualized in the Unreal Engine).</span><a class="headerlink" href="#fig-streetspace" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <section id="cityfurniture">
@@ -1187,7 +1175,7 @@
 <figure class="align-center" id="fig-cityfurniture">
 <img alt="../_images/cityfurniture_group.PNG" src="../_images/cityfurniture_group.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 40 </span><span class="caption-text">Individual CityFurniture objects with different functions part of a CityObjectGroup.</span><a class="headerlink" href="#fig-cityfurniture" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 38 </span><span class="caption-text">Individual CityFurniture objects with different functions part of a CityObjectGroup.</span><a class="headerlink" href="#fig-cityfurniture" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -1202,7 +1190,7 @@
 <figure class="align-center" id="fig-vegetation">
 <img alt="../_images/vegetation.PNG" src="../_images/vegetation.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 41 </span><span class="caption-text">Vegetation objects such as trees represented using abstract (left) and more detailed (right) 3D models.</span><a class="headerlink" href="#fig-vegetation" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 39 </span><span class="caption-text">Vegetation objects such as trees represented using abstract (left) and more detailed (right) 3D models.</span><a class="headerlink" href="#fig-vegetation" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
