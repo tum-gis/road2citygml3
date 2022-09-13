@@ -52,7 +52,7 @@ The conceptual model of CityGML version 3.0 as well as relevant publications in 
 Data downloads
 ===============
 .. tip::
-   * Most datasets used in this document to illustrate concepts of the CityGML 3.0 Transportation module can be downloaded from `this repository <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation>`_.
+   * Most examples datasets presented in in section 4  can be downloaded from `this repository <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation>`_.
    * This includes  `basic <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation/Basic%20examples>`_ as well as `real-world <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation/Real-world%20examples>`_ examples.
 
 .. tip::
@@ -163,6 +163,120 @@ Required and recommended attributes
 Codelists
 -----------
 Codelists for the CityGML 2.0 Transportation module as defined by the Special Interest Group 3D (SIG3D) are available `here <https://www.sig3d.org/codelists/standard/transportation/>`_. This includes codelists for *(Auxiliary)TrafficAreas* and *TransportationComplex* objects (e.g. *Roads*). These can be transferred and applied to respective CityGML 3.0 classes.  
+
+The following tables provide recommendations for *AuxiliaryTrafficAreas* and *TrafficAreas* that should be explicitly modelled by providing respective *usage* and *function* attributes. Multiple *usage* and *function* attributes can be modelled per *AuxiliaryTrafficAreas* and *TrafficAreas*.  
+*Function* describes surface types such as driving lane, footpath, or cycle lane, while the *usage* attribute indicates which modes of transportation can use it (e.g. pedestrian, car, tram).
+
+.. list-table:: Recommended TrafficArea 'usage' attributes.
+   :widths: 40 40 
+   :header-rows: 1
+
+   * - citygml_usage (text)
+     - citygml_usage (code)
+     
+   * - pedestrian
+     - 1
+   * - car
+     - 2
+   * - truck
+     - 3
+   * - bus, taxi
+     - 4
+   * - train
+     - 5
+   * - bicycle
+     - 6
+   * - motorcycle
+     - 7
+   * - tram
+     - 8
+   * - emergency
+     - 15
+
+.. list-table:: Recommended TrafficArea 'function' attributes.
+   :widths: 25 25 
+   :header-rows: 1
+
+   * - citygml_function (text)
+     - citygml_function (code)
+     
+   * - driving_lane
+     - 1
+   * - footpath
+     - 2
+   * - cyclepath
+     - 3
+   * - combined foot-/cyclepath
+     - 4
+   * - square
+     - 5
+   * - parking_lay_by
+     - 7
+   * - rail
+     - 8
+   * - rail_road_combined
+     - 9
+   * - crosswalk
+     - 20
+   * - bus_lay_by
+     - 32
+   * - motorway
+     - 33
+   * - emergency_lane
+     - 36
+   * - road_works
+     - 37 
+   * - unknown
+     - 9999
+
+.. list-table:: Recommended AuxiliaryTrafficArea 'function' attributes.
+   :widths: 25 25 
+   :header-rows: 1
+
+   * - citygml_function (text)
+     - citygml_function (code)
+     
+   * - shoulder
+     - 1010
+   * - green_area
+     - 1020
+   * - kerbstone
+     - 1220
+   * - restricted
+     - 1240
+   * - traffic_island
+     - 1300
+   * - raised_median
+     - 1400
+   * - low kerbstone
+     - 1500
+   
+The attribute *surfaceMaterial* specifies the type of pavement and can be used by *AuxiliaryTrafficAreas* and *TrafficAreas*. 
+
+
+.. list-table:: Recommended AuxiliaryTrafficArea and TrafficArea 'surfaceMaterial' attributes.
+   :widths: 25 25 
+   :header-rows: 1
+
+   * - citygml_surfaceMaterial (text)
+     - citygml_surfaceMaterial (code)
+     
+   * - asphalt
+     - 1
+   * - concrete
+     - 2
+   * - pavement
+     - 3
+   * - cobblestone
+     - 4
+   * - gravel
+     - 5
+   * - soil
+     - 8
+   * - sand
+     - 9
+   * - grass
+     - 10
 
 
 Geometric representations
@@ -458,122 +572,16 @@ TrafficAreas and AuxiliaryTrafficAreas
    :align: center
    :name:  fig_section_examples2
 
-   *Section* with one carriageway (left) and *Section* with two carriageways (right) decomposed into individual *(Auxiliary)TrafficAreas*. 
+   *Section* with one carriageway (top) and *Section* with two carriageways (bottom) decomposed into individual *(Auxiliary)TrafficAreas*. 
 
-.. _fig_trafficarea2:
-.. figure:: ../figures/trafficareas_mult.PNG
+.. _fig_sections2:
+.. figure:: ../figures/buslayby.PNG
    :align: center
-   
+   :name:  fig_section_examples3
 
-   *TrafficAreas* colored according to corresponding functions (left). Multiple functions per *TrafficArea* are possible. Examples for *(Auxiliary)TrafficAreas* (right). 
-
-The following tables provide recommendations for *AuxiliaryTrafficAreas* and *TrafficAreas* that should be explicitly modelled by providing respective *usage* and *function* attributes. Multiple *usage* and *function* attributes can be modelled per *AuxiliaryTrafficAreas* and *TrafficAreas*.  
-Function describes, if the object for example may be a driving lane, a footpath, or a cycle lane, while the usage attribute indicates which modes of transportation can use it (e.g. pedestrian, car, tram).
-
-.. list-table:: Recommended TrafficArea 'usage' attributes.
-   :widths: 40 40 
-   :header-rows: 1
-
-   * - citygml_usage (text)
-     - citygml_usage (code)
-     
-   * - pedestrian
-     - 1
-   * - car
-     - 2
-   * - truck
-     - 3
-   * - bus, taxi
-     - 4
-   * - train
-     - 5
-   * - bicycle
-     - 6
-   * - motorcycle
-     - 7
-   * - tram
-     - 8
-   * - emergency
-     - 15
-
-.. list-table:: Recommended TrafficArea 'function' attributes.
-   :widths: 25 25 
-   :header-rows: 1
-
-   * - citygml_function (text)
-     - citygml_function (code)
-     
-   * - driving_lane
-     - 1
-   * - footpath
-     - 2
-   * - cyclepath
-     - 3
-   * - combined foot-/cyclepath
-     - 4
-   * - square
-     - 5
-   * - parking_lay_by
-     - 7
-   * - rail
-     - 8
-   * - rail_road_combined
-     - 9
-   * - crosswalk
-     - 20
-   * - bus_lay_by
-     - 32
-   * - motorway
-     - 33
-   * - emergency_lane
-     - 36
-   * - unknown
-     - 9999
-
-.. list-table:: Recommended AuxiliaryTrafficArea 'function' attributes.
-   :widths: 25 25 
-   :header-rows: 1
-
-   * - citygml_function (text)
-     - citygml_function (code)
-     
-   * - shoulder
-     - 1010
-   * - green_area
-     - 1020
-   * - kerbstone
-     - 1220
-   * - restricted
-     - 1240
-   * - traffic_island
-     - 1300
-   
-The attribute *surfaceMaterial* specifies the type of pavement and can be used by *AuxiliaryTrafficAreas* and *TrafficAreas*. 
+   *Section* with two carriageways decomposed into individual *(Auxiliary)TrafficAreas* including parking and bus lanes. 
 
 
-.. list-table:: Recommended AuxiliaryTrafficArea and TrafficArea 'surfaceMaterial' attributes.
-   :widths: 25 25 
-   :header-rows: 1
-
-   * - citygml_surfaceMaterial (text)
-     - citygml_surfaceMaterial (code)
-     
-   * - asphalt
-     - 1
-   * - concrete
-     - 2
-   * - pavement
-     - 3
-   * - cobblestone
-     - 4
-   * - gravel
-     - 5
-   * - soil
-     - 8
-   * - sand
-     - 9
-   * - grass
-     - 10
 
 Clearance Spaces
 ===========================
@@ -654,8 +662,10 @@ Markings
      - 131
    * - road_marking_lane_solid
      - 132
-   * - symbol
+   * - symbol_bicycle
      - 140
+   * - symbol_other
+     - 150
 
 Holes
 ==========================================
@@ -1109,7 +1119,7 @@ Concepts for modelling city furniture are provided within a specific `CityFurnit
 .. admonition:: Definition
    :class: important
 
-   **CityFurniture** is an object or piece of equipment installed in the outdoor environment for various purposes. Examples include street signs, traffic signals, street lamps, benches, fountains.
+   **CityFurniture** is an object or piece of equipment installed in the outdoor environment for various purposes. Examples include street signs, traffic signals, street lamps, benches, trash bins, bike racks or fountains.
 
 
 .. admonition:: Each CityFurniture object

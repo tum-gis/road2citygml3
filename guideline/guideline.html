@@ -236,7 +236,7 @@
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <ul class="simple">
-<li><p>Most datasets used in this document to illustrate concepts of the CityGML 3.0 Transportation module can be downloaded from <a class="reference external" href="https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation">this repository</a>.</p></li>
+<li><p>Most examples datasets presented in in section 4  can be downloaded from <a class="reference external" href="https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation">this repository</a>.</p></li>
 <li><p>This includes  <a class="reference external" href="https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation/Basic%20examples">basic</a> as well as <a class="reference external" href="https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation/Real-world%20examples">real-world</a> examples.</p></li>
 </ul>
 </div>
@@ -351,6 +351,179 @@
 <section id="codelists">
 <h3><span class="section-number">2.2.4. </span>Codelists<a class="headerlink" href="#codelists" title="Permalink to this heading"></a></h3>
 <p>Codelists for the CityGML 2.0 Transportation module as defined by the Special Interest Group 3D (SIG3D) are available <a class="reference external" href="https://www.sig3d.org/codelists/standard/transportation/">here</a>. This includes codelists for <em>(Auxiliary)TrafficAreas</em> and <em>TransportationComplex</em> objects (e.g. <em>Roads</em>). These can be transferred and applied to respective CityGML 3.0 classes.</p>
+<p>The following tables provide recommendations for <em>AuxiliaryTrafficAreas</em> and <em>TrafficAreas</em> that should be explicitly modelled by providing respective <em>usage</em> and <em>function</em> attributes. Multiple <em>usage</em> and <em>function</em> attributes can be modelled per <em>AuxiliaryTrafficAreas</em> and <em>TrafficAreas</em>.
+<em>Function</em> describes surface types such as driving lane, footpath, or cycle lane, while the <em>usage</em> attribute indicates which modes of transportation can use it (e.g. pedestrian, car, tram).</p>
+<table class="colwidths-given docutils align-default" id="id2">
+<caption><span class="caption-number">Table 1 </span><span class="caption-text">Recommended TrafficArea ‘usage’ attributes.</span><a class="headerlink" href="#id2" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>citygml_usage (text)</p></th>
+<th class="head"><p>citygml_usage (code)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>pedestrian</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>car</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>truck</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p>bus, taxi</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>train</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>bicycle</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-even"><td><p>motorcycle</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-odd"><td><p>tram</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-even"><td><p>emergency</p></td>
+<td><p>15</p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-given docutils align-default" id="id3">
+<caption><span class="caption-number">Table 2 </span><span class="caption-text">Recommended TrafficArea ‘function’ attributes.</span><a class="headerlink" href="#id3" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>citygml_function (text)</p></th>
+<th class="head"><p>citygml_function (code)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>driving_lane</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>footpath</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>cyclepath</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p>combined foot-/cyclepath</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>square</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>parking_lay_by</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-even"><td><p>rail</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-odd"><td><p>rail_road_combined</p></td>
+<td><p>9</p></td>
+</tr>
+<tr class="row-even"><td><p>crosswalk</p></td>
+<td><p>20</p></td>
+</tr>
+<tr class="row-odd"><td><p>bus_lay_by</p></td>
+<td><p>32</p></td>
+</tr>
+<tr class="row-even"><td><p>motorway</p></td>
+<td><p>33</p></td>
+</tr>
+<tr class="row-odd"><td><p>emergency_lane</p></td>
+<td><p>36</p></td>
+</tr>
+<tr class="row-even"><td><p>road_works</p></td>
+<td><p>37</p></td>
+</tr>
+<tr class="row-odd"><td><p>unknown</p></td>
+<td><p>9999</p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-given docutils align-default" id="id4">
+<caption><span class="caption-number">Table 3 </span><span class="caption-text">Recommended AuxiliaryTrafficArea ‘function’ attributes.</span><a class="headerlink" href="#id4" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>citygml_function (text)</p></th>
+<th class="head"><p>citygml_function (code)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>shoulder</p></td>
+<td><p>1010</p></td>
+</tr>
+<tr class="row-odd"><td><p>green_area</p></td>
+<td><p>1020</p></td>
+</tr>
+<tr class="row-even"><td><p>kerbstone</p></td>
+<td><p>1220</p></td>
+</tr>
+<tr class="row-odd"><td><p>restricted</p></td>
+<td><p>1240</p></td>
+</tr>
+<tr class="row-even"><td><p>traffic_island</p></td>
+<td><p>1300</p></td>
+</tr>
+<tr class="row-odd"><td><p>raised_median</p></td>
+<td><p>1400</p></td>
+</tr>
+<tr class="row-even"><td><p>low kerbstone</p></td>
+<td><p>1500</p></td>
+</tr>
+</tbody>
+</table>
+<p>The attribute <em>surfaceMaterial</em> specifies the type of pavement and can be used by <em>AuxiliaryTrafficAreas</em> and <em>TrafficAreas</em>.</p>
+<table class="colwidths-given docutils align-default" id="id5">
+<caption><span class="caption-number">Table 4 </span><span class="caption-text">Recommended AuxiliaryTrafficArea and TrafficArea ‘surfaceMaterial’ attributes.</span><a class="headerlink" href="#id5" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>citygml_surfaceMaterial (text)</p></th>
+<th class="head"><p>citygml_surfaceMaterial (code)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>asphalt</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>concrete</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>pavement</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p>cobblestone</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>gravel</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>soil</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-even"><td><p>sand</p></td>
+<td><p>9</p></td>
+</tr>
+<tr class="row-odd"><td><p>grass</p></td>
+<td><p>10</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 <section id="geometric-representations">
@@ -483,10 +656,10 @@
 <li><p>Long uninterrupted <em>Roads</em> (e.g. freeways or motorways) can be segmented into multiple <em>Sections</em> directly connected to each other (without intermediate <em>Intersections</em>).</p></li>
 <li><p><a class="reference internal" href="#victoriastreet"><span class="std std-numref">Figure 6</span></a> shows all surfaces belonging to a <em>Road</em> object for “Victoria Street” in Melbourne highlighted in purple.</p></li>
 </ul>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id6">
 <span id="victoriastreet"></span><img alt="../_images/victoria_street.PNG" src="../_images/victoria_street.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 6 </span><span class="caption-text">One <em>Road</em> object (Victoria Street in Melbourne) consisting of multiple <em>Sections</em> and <em>Intersections</em>.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 6 </span><span class="caption-text">One <em>Road</em> object (Victoria Street in Melbourne) consisting of multiple <em>Sections</em> and <em>Intersections</em>.</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -505,10 +678,10 @@
 <li><p><strong>can</strong> contain a <em>class</em> attribute.</p></li>
 </ul>
 </div>
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id7">
 <span id="fig-tracks"></span><img alt="../_images/tracks.PNG" src="../_images/tracks.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 7 </span><span class="caption-text"><em>TrafficAreas</em> part of Tracks within a park.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 7 </span><span class="caption-text"><em>TrafficAreas</em> part of Tracks within a park.</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -567,16 +740,16 @@
 <li><p>Depending on intended use-cases, different definitions of the extent of individual <em>Intersections</em> are possible.</p></li>
 <li><p>It is recommended to model <em>Intersections</em> with the minimal extent of surfaces shared by multiple <em>Roads</em>. However, it is not prohibited to expand <em>Intersection</em> objects into adjacent <em>Sections</em>.</p></li>
 </ul>
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id8">
 <span id="fig-intersectiondef"></span><img alt="../_images/intersectiondef.PNG" src="../_images/intersectiondef.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 10 </span><span class="caption-text">Different possible definitions for the extent of an <em>Intersection</em> (minimal extent recommended).</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 10 </span><span class="caption-text">Different possible definitions for the extent of an <em>Intersection</em> (minimal extent recommended).</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id9">
 <span id="fig-intersections"></span><img alt="../_images/intersection_examples.PNG" src="../_images/intersection_examples.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 11 </span><span class="caption-text">Typical examples of <em>Intersections</em>.</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 11 </span><span class="caption-text">Typical examples of <em>Intersections</em>.</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -621,10 +794,10 @@
 <li><p>In Germany, for example, car driving lanes typically have a free space height of 4.5 m and sidewalks of 2.5 m. This can be modelled using volumetric geometries.</p></li>
 <li><p><em>(Auxiliary)TrafficSpaces</em> do not have to be represented geometrically but should be bounded towards the ground by corresponding <em>(Auxiliary)TrafficAreas</em>.</p></li>
 </ul>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id10">
 <span id="fig-trafficspace"></span><img alt="../_images/trafficspace.PNG" src="../_images/trafficspace.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 12 </span><span class="caption-text">Volumetric representations of <em>TrafficSpaces</em> with different heights according to respective functions (left), <em>TrafficSpaces</em> underneath Building underpasses (right).</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 12 </span><span class="caption-text">Volumetric representations of <em>TrafficSpaces</em> with different heights according to respective functions (left), <em>TrafficSpaces</em> underneath Building underpasses (right).</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -651,179 +824,15 @@
 <figure class="align-center" id="fig-section-examples2">
 <span id="fig-sections1"></span><img alt="../_images/oneanttwoway_sections.PNG" src="../_images/oneanttwoway_sections.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 13 </span><span class="caption-text"><em>Section</em> with one carriageway (left) and <em>Section</em> with two carriageways (right) decomposed into individual <em>(Auxiliary)TrafficAreas</em>.</span><a class="headerlink" href="#fig-section-examples2" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 13 </span><span class="caption-text"><em>Section</em> with one carriageway (top) and <em>Section</em> with two carriageways (bottom) decomposed into individual <em>(Auxiliary)TrafficAreas</em>.</span><a class="headerlink" href="#fig-section-examples2" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id7">
-<span id="fig-trafficarea2"></span><img alt="../_images/trafficareas_mult.PNG" src="../_images/trafficareas_mult.PNG" />
+<figure class="align-center" id="fig-section-examples3">
+<span id="fig-sections2"></span><img alt="../_images/buslayby.PNG" src="../_images/buslayby.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 14 </span><span class="caption-text"><em>TrafficAreas</em> colored according to corresponding functions (left). Multiple functions per <em>TrafficArea</em> are possible. Examples for <em>(Auxiliary)TrafficAreas</em> (right).</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 14 </span><span class="caption-text"><em>Section</em> with two carriageways decomposed into individual <em>(Auxiliary)TrafficAreas</em> including parking and bus lanes.</span><a class="headerlink" href="#fig-section-examples3" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<p>The following tables provide recommendations for <em>AuxiliaryTrafficAreas</em> and <em>TrafficAreas</em> that should be explicitly modelled by providing respective <em>usage</em> and <em>function</em> attributes. Multiple <em>usage</em> and <em>function</em> attributes can be modelled per <em>AuxiliaryTrafficAreas</em> and <em>TrafficAreas</em>.
-Function describes, if the object for example may be a driving lane, a footpath, or a cycle lane, while the usage attribute indicates which modes of transportation can use it (e.g. pedestrian, car, tram).</p>
-<table class="colwidths-given docutils align-default" id="id8">
-<caption><span class="caption-number">Table 1 </span><span class="caption-text">Recommended TrafficArea ‘usage’ attributes.</span><a class="headerlink" href="#id8" title="Permalink to this table"></a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>citygml_usage (text)</p></th>
-<th class="head"><p>citygml_usage (code)</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>pedestrian</p></td>
-<td><p>1</p></td>
-</tr>
-<tr class="row-odd"><td><p>car</p></td>
-<td><p>2</p></td>
-</tr>
-<tr class="row-even"><td><p>truck</p></td>
-<td><p>3</p></td>
-</tr>
-<tr class="row-odd"><td><p>bus, taxi</p></td>
-<td><p>4</p></td>
-</tr>
-<tr class="row-even"><td><p>train</p></td>
-<td><p>5</p></td>
-</tr>
-<tr class="row-odd"><td><p>bicycle</p></td>
-<td><p>6</p></td>
-</tr>
-<tr class="row-even"><td><p>motorcycle</p></td>
-<td><p>7</p></td>
-</tr>
-<tr class="row-odd"><td><p>tram</p></td>
-<td><p>8</p></td>
-</tr>
-<tr class="row-even"><td><p>emergency</p></td>
-<td><p>15</p></td>
-</tr>
-</tbody>
-</table>
-<table class="colwidths-given docutils align-default" id="id9">
-<caption><span class="caption-number">Table 2 </span><span class="caption-text">Recommended TrafficArea ‘function’ attributes.</span><a class="headerlink" href="#id9" title="Permalink to this table"></a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>citygml_function (text)</p></th>
-<th class="head"><p>citygml_function (code)</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>driving_lane</p></td>
-<td><p>1</p></td>
-</tr>
-<tr class="row-odd"><td><p>footpath</p></td>
-<td><p>2</p></td>
-</tr>
-<tr class="row-even"><td><p>cyclepath</p></td>
-<td><p>3</p></td>
-</tr>
-<tr class="row-odd"><td><p>combined foot-/cyclepath</p></td>
-<td><p>4</p></td>
-</tr>
-<tr class="row-even"><td><p>square</p></td>
-<td><p>5</p></td>
-</tr>
-<tr class="row-odd"><td><p>parking_lay_by</p></td>
-<td><p>7</p></td>
-</tr>
-<tr class="row-even"><td><p>rail</p></td>
-<td><p>8</p></td>
-</tr>
-<tr class="row-odd"><td><p>rail_road_combined</p></td>
-<td><p>9</p></td>
-</tr>
-<tr class="row-even"><td><p>crosswalk</p></td>
-<td><p>20</p></td>
-</tr>
-<tr class="row-odd"><td><p>bus_lay_by</p></td>
-<td><p>32</p></td>
-</tr>
-<tr class="row-even"><td><p>motorway</p></td>
-<td><p>33</p></td>
-</tr>
-<tr class="row-odd"><td><p>emergency_lane</p></td>
-<td><p>36</p></td>
-</tr>
-<tr class="row-even"><td><p>unknown</p></td>
-<td><p>9999</p></td>
-</tr>
-</tbody>
-</table>
-<table class="colwidths-given docutils align-default" id="id10">
-<caption><span class="caption-number">Table 3 </span><span class="caption-text">Recommended AuxiliaryTrafficArea ‘function’ attributes.</span><a class="headerlink" href="#id10" title="Permalink to this table"></a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>citygml_function (text)</p></th>
-<th class="head"><p>citygml_function (code)</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>shoulder</p></td>
-<td><p>1010</p></td>
-</tr>
-<tr class="row-odd"><td><p>green_area</p></td>
-<td><p>1020</p></td>
-</tr>
-<tr class="row-even"><td><p>kerbstone</p></td>
-<td><p>1220</p></td>
-</tr>
-<tr class="row-odd"><td><p>restricted</p></td>
-<td><p>1240</p></td>
-</tr>
-<tr class="row-even"><td><p>traffic_island</p></td>
-<td><p>1300</p></td>
-</tr>
-</tbody>
-</table>
-<p>The attribute <em>surfaceMaterial</em> specifies the type of pavement and can be used by <em>AuxiliaryTrafficAreas</em> and <em>TrafficAreas</em>.</p>
-<table class="colwidths-given docutils align-default" id="id11">
-<caption><span class="caption-number">Table 4 </span><span class="caption-text">Recommended AuxiliaryTrafficArea and TrafficArea ‘surfaceMaterial’ attributes.</span><a class="headerlink" href="#id11" title="Permalink to this table"></a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>citygml_surfaceMaterial (text)</p></th>
-<th class="head"><p>citygml_surfaceMaterial (code)</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>asphalt</p></td>
-<td><p>1</p></td>
-</tr>
-<tr class="row-odd"><td><p>concrete</p></td>
-<td><p>2</p></td>
-</tr>
-<tr class="row-even"><td><p>pavement</p></td>
-<td><p>3</p></td>
-</tr>
-<tr class="row-odd"><td><p>cobblestone</p></td>
-<td><p>4</p></td>
-</tr>
-<tr class="row-even"><td><p>gravel</p></td>
-<td><p>5</p></td>
-</tr>
-<tr class="row-odd"><td><p>soil</p></td>
-<td><p>8</p></td>
-</tr>
-<tr class="row-even"><td><p>sand</p></td>
-<td><p>9</p></td>
-</tr>
-<tr class="row-odd"><td><p>grass</p></td>
-<td><p>10</p></td>
-</tr>
-</tbody>
-</table>
 </section>
 <section id="clearance-spaces">
 <h2><span class="section-number">3.6. </span>Clearance Spaces<a class="headerlink" href="#clearance-spaces" title="Permalink to this heading"></a></h2>
@@ -863,14 +872,14 @@ Function describes, if the object for example may be a driving lane, a footpath,
 <li><p>Individual lines part of a dashed line e.g. can also be aggregated.</p></li>
 <li><p>Colored surfaces (e.g. a red or green bicycle path) should not be modelled as <em>Markings</em> but as corresponding <em>TrafficAreas</em> with a suitable color or texture.</p></li>
 </ul>
-<figure class="align-center" id="id12">
+<figure class="align-center" id="id11">
 <span id="fig-markings"></span><img alt="../_images/markings.PNG" src="../_images/markings.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 15 </span><span class="caption-text">Different types of <em>Markings</em> including stop lines, dashed lines, arrows and zebra crossings.</span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 15 </span><span class="caption-text">Different types of <em>Markings</em> including stop lines, dashed lines, arrows and zebra crossings.</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<table class="colwidths-given docutils align-default" id="id13">
-<caption><span class="caption-number">Table 5 </span><span class="caption-text">Recommended Marking ‘class’ attributes.</span><a class="headerlink" href="#id13" title="Permalink to this table"></a></caption>
+<table class="colwidths-given docutils align-default" id="id12">
+<caption><span class="caption-number">Table 5 </span><span class="caption-text">Recommended Marking ‘class’ attributes.</span><a class="headerlink" href="#id12" title="Permalink to this table"></a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -920,8 +929,11 @@ Function describes, if the object for example may be a driving lane, a footpath,
 <tr class="row-even"><td><p>road_marking_lane_solid</p></td>
 <td><p>132</p></td>
 </tr>
-<tr class="row-odd"><td><p>symbol</p></td>
+<tr class="row-odd"><td><p>symbol_bicycle</p></td>
 <td><p>140</p></td>
+</tr>
+<tr class="row-even"><td><p>symbol_other</p></td>
+<td><p>150</p></td>
 </tr>
 </tbody>
 </table>
@@ -969,16 +981,16 @@ Function describes, if the object for example may be a driving lane, a footpath,
 <li><p><strong>can</strong> be segmented into individual <em>(Auxiliary)TrafficSpaces</em> bounded by <em>(Auxiliary)TrafficAreas</em>. Individual parking slots within a bigger parking lot for example can be modelled as individual <em>TrafficAreas</em>.</p></li>
 </ul>
 </div>
-<figure class="align-center" id="id14">
+<figure class="align-center" id="id13">
 <span id="fig-square"></span><img alt="../_images/square.PNG" src="../_images/square.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 17 </span><span class="caption-text">A parking lot segmented into individual <em>TrafficAreas</em> (parking slots and driving surfaces) modelled as a <em>Square</em>.</span><a class="headerlink" href="#id14" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 17 </span><span class="caption-text">A parking lot segmented into individual <em>TrafficAreas</em> (parking slots and driving surfaces) modelled as a <em>Square</em>.</span><a class="headerlink" href="#id13" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id15">
+<figure class="align-center" id="id14">
 <span id="fig-plaza"></span><img alt="../_images/plaza.PNG" src="../_images/plaza.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 18 </span><span class="caption-text">A plaza modelled as a <em>Square</em> surrounded by <em>Tracks</em>.</span><a class="headerlink" href="#id15" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 18 </span><span class="caption-text">A plaza modelled as a <em>Square</em> surrounded by <em>Tracks</em>.</span><a class="headerlink" href="#id14" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -998,8 +1010,8 @@ Function describes, if the object for example may be a driving lane, a footpath,
 <p><span class="caption-number">Figure 19 </span><span class="caption-text">Individual Section with one carriageway.</span><a class="headerlink" href="#fig-section1way" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<div class="literal-block-wrapper docutils container" id="id16">
-<span id="xml-onesection"></span><div class="code-block-caption"><span class="caption-number">XML example 1 </span><span class="caption-text">Individual Section with one carriageway in granularity ‘way’.</span><a class="headerlink" href="#id16" title="Permalink to this code"></a></div>
+<div class="literal-block-wrapper docutils container" id="id15">
+<span id="xml-onesection"></span><div class="code-block-caption"><span class="caption-number">XML example 1 </span><span class="caption-text">Individual Section with one carriageway in granularity ‘way’.</span><a class="headerlink" href="#id15" title="Permalink to this code"></a></div>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;core:cityObjectMember&gt;</span>
    <span class="nt">&lt;tran:Road</span> <span class="na">gml:id=</span><span class="s">&quot;UUID_Little_Lonsdale_Street&quot;</span><span class="nt">&gt;</span>
       <span class="nt">&lt;gml:name&gt;</span>Little_Lonsdale_Street<span class="nt">&lt;/gml:name&gt;</span>
@@ -1038,8 +1050,8 @@ Function describes, if the object for example may be a driving lane, a footpath,
 <p><span class="caption-number">Figure 20 </span><span class="caption-text">Individual Section with two  carriageways.</span><a class="headerlink" href="#fig-section2ways" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<div class="literal-block-wrapper docutils container" id="id17">
-<div class="code-block-caption"><span class="caption-number">XML example 2 </span><span class="caption-text">Individual Section with two carriageways in granularity ‘way’.</span><a class="headerlink" href="#id17" title="Permalink to this code"></a></div>
+<div class="literal-block-wrapper docutils container" id="id16">
+<div class="code-block-caption"><span class="caption-number">XML example 2 </span><span class="caption-text">Individual Section with two carriageways in granularity ‘way’.</span><a class="headerlink" href="#id16" title="Permalink to this code"></a></div>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;core:cityObjectMember&gt;</span>
    <span class="nt">&lt;tran:Road</span> <span class="na">gml:id=</span><span class="s">&quot;UUID_Lygon_Street&quot;</span><span class="nt">&gt;</span>
       <span class="nt">&lt;gml:name&gt;</span>Lygon_Street<span class="nt">&lt;/gml:name&gt;</span>
@@ -1094,8 +1106,8 @@ Function describes, if the object for example may be a driving lane, a footpath,
 <p><span class="caption-number">Figure 21 </span><span class="caption-text">Intersection with three adjacent Sections.</span><a class="headerlink" href="#fig-3way" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<div class="literal-block-wrapper docutils container" id="id18">
-<div class="code-block-caption"><span class="caption-number">XML example 3 </span><span class="caption-text">Intersection with three adjacent Sections.</span><a class="headerlink" href="#id18" title="Permalink to this code"></a></div>
+<div class="literal-block-wrapper docutils container" id="id17">
+<div class="code-block-caption"><span class="caption-number">XML example 3 </span><span class="caption-text">Intersection with three adjacent Sections.</span><a class="headerlink" href="#id17" title="Permalink to this code"></a></div>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;core:cityObjectMember&gt;</span>
    <span class="nt">&lt;tran:Road</span> <span class="na">gml:id=</span><span class="s">&quot;UUID_Queensberry_Street&quot;</span><span class="nt">&gt;</span>
       <span class="nt">&lt;gml:name&gt;</span>Queensberry_Street<span class="nt">&lt;/gml:name&gt;</span>
@@ -1140,8 +1152,8 @@ Function describes, if the object for example may be a driving lane, a footpath,
 <p><span class="caption-number">Figure 22 </span><span class="caption-text">Intersection with four adjacent Sections.</span><a class="headerlink" href="#fig-4way" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<div class="literal-block-wrapper docutils container" id="id19">
-<span id="xml-4way"></span><div class="code-block-caption"><span class="caption-number">XML example 4 </span><span class="caption-text">Intersection with four adjacent Sections.</span><a class="headerlink" href="#id19" title="Permalink to this code"></a></div>
+<div class="literal-block-wrapper docutils container" id="id18">
+<span id="xml-4way"></span><div class="code-block-caption"><span class="caption-number">XML example 4 </span><span class="caption-text">Intersection with four adjacent Sections.</span><a class="headerlink" href="#id18" title="Permalink to this code"></a></div>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;core:cityObjectMember&gt;</span>
    <span class="nt">&lt;tran:Road</span> <span class="na">gml:id=</span><span class="s">&quot;UUID_Queensberry_Street&quot;</span><span class="nt">&gt;</span>
       <span class="nt">&lt;gml:name&gt;</span>Queensberry_Street<span class="nt">&lt;/gml:name&gt;</span>
@@ -1271,10 +1283,10 @@ Function describes, if the object for example may be a driving lane, a footpath,
 <li><p>This <em>Intersection</em> then can be linked to both <em>FeatureTypes</em> using XLinks.</p></li>
 <li><p><em>TrafficAreas</em> within an <em>Intersection</em> that is part of a <em>Road</em> as well as a <em>Railway</em> object, should contain multiple <em>function</em> attributes (e.g. ‘driving lane’ as well as ‘railway lane’).</p></li>
 </ul>
-<figure class="align-center" id="id20">
+<figure class="align-center" id="id19">
 <span id="levelcrossing"></span><img alt="../_images/levelcrossing2.PNG" src="../_images/levelcrossing2.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 28 </span><span class="caption-text">Level crossing of a <em>Road</em> and a <em>Railway</em> object sharing an <em>Intersection</em>.</span><a class="headerlink" href="#id20" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 28 </span><span class="caption-text">Level crossing of a <em>Road</em> and a <em>Railway</em> object sharing an <em>Intersection</em>.</span><a class="headerlink" href="#id19" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -1284,16 +1296,16 @@ Function describes, if the object for example may be a driving lane, a footpath,
 <li><p>Tramways within a <em>Road</em> can be modelled as <em>TrafficAreas</em> with multiple <em>function</em> attributes (e.g. railway and driving lane).</p></li>
 <li><p>These <em>TrafficAreas</em> can be linked to multiple <em>Intersections</em>.</p></li>
 </ul>
-<figure class="align-center" id="id21">
+<figure class="align-center" id="id20">
 <img alt="../_images/tramway.PNG" src="../_images/tramway.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 29 </span><span class="caption-text">A tramway within a <em>Road</em>. Surfaces of the tramway are <em>TrafficAreas</em> with multiple functions linked to respective <em>Intersections</em>.</span><a class="headerlink" href="#id21" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 29 </span><span class="caption-text">A tramway within a <em>Road</em>. Surfaces of the tramway are <em>TrafficAreas</em> with multiple functions linked to respective <em>Intersections</em>.</span><a class="headerlink" href="#id20" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id22">
+<figure class="align-center" id="id21">
 <img alt="../_images/tramway1.PNG" src="../_images/tramway1.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 30 </span><span class="caption-text">Object diagram of a tramway surface part of multiple <em>Intersections</em>.</span><a class="headerlink" href="#id22" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 30 </span><span class="caption-text">Object diagram of a tramway surface part of multiple <em>Intersections</em>.</span><a class="headerlink" href="#id21" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -1305,22 +1317,22 @@ Function describes, if the object for example may be a driving lane, a footpath,
 <li><p>In the example shown in <a class="reference internal" href="#cityobjectrelation1"><span class="std std-numref">Figure 31</span></a>, <em>TrafficArea 6</em> and <em>RoofSurface 2</em> represent the same (geometric) surface but are part of different (semantic) objects.</p></li>
 <li><p>Using CityObjectRelations in order to express this relation is shown in <a class="reference internal" href="#cityobjectrelation2"><span class="std std-numref">Figure 32</span></a>.</p></li>
 </ul>
-<figure class="align-center" id="id23">
+<figure class="align-center" id="id22">
 <span id="cityobjectrelation1"></span><img alt="../_images/road_bridge.PNG" src="../_images/road_bridge.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 31 </span><span class="caption-text">Shared surfaces by Roads and Bridges using CityObjectRelations</span><a class="headerlink" href="#id23" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 31 </span><span class="caption-text">Shared surfaces by Roads and Bridges using CityObjectRelations</span><a class="headerlink" href="#id22" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id23">
+<span id="cityobjectrelation2"></span><img alt="../_images/cityobjectrelation.PNG" src="../_images/cityobjectrelation.PNG" />
+<figcaption>
+<p><span class="caption-number">Figure 32 </span><span class="caption-text"><em>CityObjectRelation</em> between a <em>RoofSurface</em> and a <em>TrafficArea</em> sharing the same part of a Road on a Bridge.</span><a class="headerlink" href="#id23" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id24">
-<span id="cityobjectrelation2"></span><img alt="../_images/cityobjectrelation.PNG" src="../_images/cityobjectrelation.PNG" />
-<figcaption>
-<p><span class="caption-number">Figure 32 </span><span class="caption-text"><em>CityObjectRelation</em> between a <em>RoofSurface</em> and a <em>TrafficArea</em> sharing the same part of a Road on a Bridge.</span><a class="headerlink" href="#id24" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="id25">
 <img alt="../_images/roadbridge.PNG" src="../_images/roadbridge.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 33 </span><span class="caption-text">TrafficAreas part of a Road are simultaneously modelled as RoofSurfaces part of a Bridge.</span><a class="headerlink" href="#id25" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 33 </span><span class="caption-text">TrafficAreas part of a Road are simultaneously modelled as RoofSurfaces part of a Bridge.</span><a class="headerlink" href="#id24" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -1377,7 +1389,7 @@ Function describes, if the object for example may be a driving lane, a footpath,
 <p>Concepts for modelling city furniture are provided within a specific <a class="reference external" href="https://docs.ogc.org/is/20-010/20-010.html#toc32">CityFurniture module.</a></p>
 <div class="important admonition">
 <p class="admonition-title">Definition</p>
-<p><strong>CityFurniture</strong> is an object or piece of equipment installed in the outdoor environment for various purposes. Examples include street signs, traffic signals, street lamps, benches, fountains.</p>
+<p><strong>CityFurniture</strong> is an object or piece of equipment installed in the outdoor environment for various purposes. Examples include street signs, traffic signals, street lamps, benches, trash bins, bike racks or fountains.</p>
 </div>
 <div class="admonition-each-cityfurniture-object admonition">
 <p class="admonition-title">Each CityFurniture object</p>
