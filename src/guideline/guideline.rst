@@ -25,7 +25,7 @@ Scope
 * The **focus of this document is on models of Roads** and their parts (including individual driving lanes, pedestrian sidewalks, bike lanes, etc.).
 * The CityGML conceptual model allows various geometrical representations for objects such as transportation infrastructure (e.g. linear, volumetric or point clouds). The modelling examples given in this document **focus on surface-based polygonal representations** using explicit geo-referenced geometries.
 * Data and modelling examples in this document are based on the **GML encoding** of CityGML.  
-* Most **Example datasets** used to illustrate these modelling concepts are provided as Open Data.
+* Most **Example datasets** presented in section 4 are provided as Open Data.
 * In addition to modelling concepts, this document provides (some) data recording recommendations. However, this is not a data recording manual.
 * This document can be seen as an addition and extension to the  `CityGML User Guide <https://docs.ogc.org/guides/20-066.html>`_ with a specific focus on modelling roads.
 
@@ -204,12 +204,6 @@ Adaption to the terrain
 * Triangles of this new terrain, that are part of individual *(Auxiliary)TrafficAreas*, can then be used to represent the geometry of those surfaces.
 
 
-.. figure:: ../figures/adaptiontoterrain.PNG
-   :align: center
-   :name:  fig_terrain
-   
-   Adaption of 2D *TrafficAreas* to the terrain using breaklines.
-
 
 Subtle 3D structures such as raised medians
 ------------------------------------------------------------
@@ -233,11 +227,6 @@ Predecessor / Successor relations
 * This is especially recommended for linear representations of *TrafficSpaces* in *granularity 'lane'* (e.g. to support routing applications). 
 * However, this is also available for other geometric representations and granularities of *TrafficSpaces*.
 
-.. figure:: ../figures/oredecessorsuccessor.PNG
-   :align: center
-   :name:  fig_predsuc
-   
-   Predecessor and successor relations of linear *TrafficSpace* representations.
 
 XLinks
 ---------
@@ -328,7 +317,7 @@ Tracks
    :align: center
 
 
-   *TrafficAreas* part of Tracks within a park surrounded by *TrafficAreas* part of *Roads*.
+   *TrafficAreas* part of Tracks within a park.
 
 
 
@@ -346,9 +335,10 @@ Sections and Intersections
  
 .. figure:: ../figures/sections_intersections1.PNG
    :align: center
-   :name:  fig_sections_intersections
+   :name:  fig_sections_intersections1
 
    Segmentation of large *Road* networks into individual *Sections* (orange) and *Intersections* (blue). *Sections* and *Intersections* belonging to a specific *Road* called 'Victoria Street' are surrounded with a purple line.
+
 
 Sections
 -----------
@@ -368,6 +358,7 @@ Sections
    :name:  fig_section_examples
 
    Typical examples of *Sections*.
+
 
 
 Intersections
@@ -462,12 +453,12 @@ TrafficAreas and AuxiliaryTrafficAreas
    * **can** contain multiple *usage* attributes indicating which types of traffic members use certain surfaces (e.g. cars, pedestrians or bicyclists).
    * **should not** have overlapping geometries but rather be represented with separate (Auxiliary)TrafficAreas with multiple *function* attributes. 
 
-.. _fig_trafficarea1:
-.. figure:: ../figures/roads_sections_intersections_trafficareas.PNG
+.. _fig_sections:
+.. figure:: ../figures/oneanttwoway_sections.PNG
    :align: center
-   
+   :name:  fig_section_examples1
 
-   Further decomposition of *Sections* and *Intersections* into individual *(Auxiliary)TrafficAreas*. 
+   *Section* with one carriageway (left) and *Section* with two carriageways (right) decomposed into individual *(Auxiliary)TrafficAreas*. 
 
 .. _fig_trafficarea2:
 .. figure:: ../figures/trafficareas_mult.PNG
@@ -519,7 +510,7 @@ Markings
    :align: center
    
    
-   Different types of *Markings* including stop lines, dashed lines and arrows.
+   Different types of *Markings* including stop lines, dashed lines, arrows and zebra crossings.
 
 Holes
 ==========================================
