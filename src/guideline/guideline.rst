@@ -285,7 +285,7 @@ Geometric representations
 * Spatial representations can have 0-, 1-, 2-, or 3-dimensional extents depending on the respective feature type and Levels of Detail.
 * CityGML makes use of different kinds of aggregations of geometries like spatial aggregates (*MultiPoint, MultiCurve, MultiSurface, MultiSolid*) and composites (*CompositeCurve, CompositeSurface, CompositeSolid*).
 * Volumetric shapes are represented in ISO 19107 according to the so-called *Boundary Representation (B-Rep)*. 
-* CityGML 3.0 supports point cloud geometries. Point clouds can either be provided inline within a CityGML file or as reference to external point cloud files of common file types such as LAS or LAZ.
+* CityGML 3.0 supports point cloud geometries. Point clouds can either be provided inline within a CityGML file or as reference to external point cloud files of common file types such as [LAS](https://www.ogc.org/standards/LAS) or LAZ.
 * Recommendations for modelling *Roads* using polygonal (surface-based) representations are given in this document.
 * For more general recommendations on using geometries in CityGML, please refer to `this guideline <https://en.wiki.quality.sig3d.org/index.php?title=Modeling_Guide_for_3D_Objects_-_Part_1:_Basics_(Rules_for_Validating_GML_Geometries_in_CityGML)>`_
 
