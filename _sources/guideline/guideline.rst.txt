@@ -25,7 +25,7 @@ Scope
 * The **focus of this document is on models of Roads** and their parts (including individual driving lanes, pedestrian sidewalks, bike lanes, etc.).
 * The CityGML conceptual model allows various geometrical representations for objects such as transportation infrastructure (e.g. linear, volumetric or point clouds). The modelling examples given in this document **focus on surface-based polygonal representations** using explicit geo-referenced geometries.
 * Data and modelling examples in this document are based on the **GML encoding** of CityGML.  
-* Most **Example datasets** presented in section 4 are provided as Open Data.
+* Most **example datasets** presented in section 4 are provided as Open Data.
 * In addition to modelling concepts, this document provides (some) data recording recommendations. However, this is not a data recording manual.
 * This document can be seen as an addition and extension to the  `CityGML User Guide <https://docs.ogc.org/guides/20-066.html>`_ with a specific focus on modelling roads.
 
@@ -250,6 +250,8 @@ The following tables provide recommendations for *AuxiliaryTrafficAreas* and *Tr
      - 1400
    * - low kerbstone
      - 1500
+   * - border
+     - 1600
    
 The attribute *surfaceMaterial* specifies the type of pavement and can be used by *AuxiliaryTrafficAreas* and *TrafficAreas*. 
 
@@ -454,6 +456,7 @@ Sections and Intersections
    Segmentation of large *Road* networks into individual *Sections* (orange) and *Intersections* (blue). *Sections* and *Intersections* belonging to a specific *Road* called 'Victoria Street' are surrounded with a purple line.
 
 
+
 Sections
 -----------
 
@@ -568,13 +571,22 @@ TrafficAreas and AuxiliaryTrafficAreas
    * **should not** have overlapping geometries but rather be represented with separate (Auxiliary)TrafficAreas with multiple *function* attributes. 
 
 .. _fig_sections1:
-.. figure:: ../figures/oneanttwoway_sections.PNG
+.. figure:: ../figures/trafficareas_onecarriageway.PNG
+   :align: center
+   :name:  fig_section_examples1
+
+   *Section* with one carriageway decomposed into individual *(Auxiliary)TrafficAreas*. 
+
+   
+.. _fig_sections2:
+.. figure:: ../figures/trafficareas_twocarriageway.PNG
    :align: center
    :name:  fig_section_examples2
 
-   *Section* with one carriageway (top) and *Section* with two carriageways (bottom) decomposed into individual *(Auxiliary)TrafficAreas*. 
+   *Section* with two carriageways decomposed into individual *(Auxiliary)TrafficAreas*. 
 
-.. _fig_sections2:
+
+.. _fig_sections3:
 .. figure:: ../figures/buslayby.PNG
    :align: center
    :name:  fig_section_examples3
