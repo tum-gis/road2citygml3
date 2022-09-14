@@ -470,11 +470,11 @@ Sections
    * **should** indicate its type (e.g. road corridor, dead end, etc.) by a corresponding *class* attribute.
 
 .. _fig_sections:
-.. figure:: ../figures/section_examples.PNG
+.. figure:: ../figures/section.PNG
    :align: center
    :name:  fig_section_examples
 
-   Typical examples of *Sections*.
+   Typical example of a *Section* (surrounded with orange lines) between two intersections.
 
 
 
@@ -496,18 +496,13 @@ Intersections
 * It is recommended to model *Intersections* with the minimal extent of surfaces shared by multiple *Roads*. However, it is not prohibited to expand *Intersection* objects into adjacent *Sections*. 
 
 .. _fig_intersectiondef:
-.. figure:: ../figures/intersectiondef.PNG
+.. figure:: ../figures/intersection.PNG
    :align: center
    
 
-   Different possible definitions for the extent of an *Intersection* (minimal extent recommended).
+   Two *Intersections* (surrounded with blue lines).
 
-.. _fig_intersections:
-.. figure:: ../figures/intersection_examples.PNG
-   :align: center
-   
 
-   Typical examples of *Intersections*.
 
 
 TrafficSpaces and AuxiliaryTrafficSpaces
