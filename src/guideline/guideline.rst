@@ -403,37 +403,15 @@ Transportation objects such as *Roads, Tracks,* or *Railways* are defined as spe
 * In case a *Road* does not have a name, logical aggregations of underlying *Sections* and *Intersections* should be performed.
 * Multiple *Roads* can share the same *Intersection*.
 * Long uninterrupted *Roads* (e.g. freeways or motorways) can be segmented into multiple *Sections* directly connected to each other (without intermediate *Intersections*).
-* :numref:`victoriastreet` shows all surfaces belonging to a *Road* object for "Victoria Street" in Melbourne highlighted in purple.
+* :numref:`roads1` shows three *Road* objects highlighted in purple, yellow and green. Not that these *Roads* have shared *Intersections*
 
-.. _victoriastreet:
-.. figure:: ../figures/victoria_street.PNG
+.. _roads1:
+.. figure:: ../figures/roads.PNG
    :align: center
    
-
-   One *Road* object (Victoria Street in Melbourne) consisting of multiple *Sections* and *Intersections*. 
-
-
-Tracks
-================================
-
-.. admonition:: Definition
-   :class: important
-   
-   A **Track** is a small path mainly used by pedestrians.
-
-.. admonition:: Each Track 
-  
-   * **must** contain a unique *gml:id* attribute. 
-   * **should** consist of individual *Sections* and *Intersections*.
-   * **can** contain multiple *function* and *usage* attributes.
-   * **can** contain a *class* attribute. 
-  
-.. _fig_tracks:
-.. figure:: ../figures/tracks.PNG
-   :align: center
+   Three *Road* objects highlighted in purple, yellow and green with shared *Intersections*. 
 
 
-   *TrafficAreas* part of Tracks within a park.
 
 
 
@@ -449,12 +427,6 @@ Sections and Intersections
    * **can** contain a *class* attribute.
    * **do not** need to alternate. In some cases it might be useful to have individual *Sections* directly next to each other. 
  
-.. figure:: ../figures/sections_intersections1.PNG
-   :align: center
-   :name:  fig_sections_intersections1
-
-   Segmentation of large *Road* networks into individual *Sections* (orange) and *Intersections* (blue). *Sections* and *Intersections* belonging to a specific *Road* called 'Victoria Street' are surrounded with a purple line.
-
 
 
 Sections
@@ -500,7 +472,7 @@ Intersections
    :align: center
    
 
-   Two *Intersections* (surrounded with blue lines).
+   Two *Intersections* (highlighted in blue).
 
 
 
@@ -698,6 +670,31 @@ Holes
    :name:  fig_road_hole
    
    Manhole covers modelled as *Holes*.
+
+
+
+Tracks
+================================
+
+.. admonition:: Definition
+   :class: important
+   
+   A **Track** is a small path mainly used by pedestrians.
+
+.. admonition:: Each Track 
+  
+   * **must** contain a unique *gml:id* attribute. 
+   * **should** consist of individual *Sections* and *Intersections*.
+   * **can** contain multiple *function* and *usage* attributes.
+   * **can** contain a *class* attribute. 
+  
+.. _fig_tracks:
+.. figure:: ../figures/tracks.PNG
+   :align: center
+
+
+   *TrafficAreas* part of Tracks within a park.
+
 
 
 Squares
