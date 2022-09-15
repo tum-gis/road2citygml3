@@ -547,7 +547,7 @@ TrafficAreas and AuxiliaryTrafficAreas
    :align: center
    :name:  fig_section_examples1
 
-   *Section* with one carriageway decomposed into individual *(Auxiliary)TrafficAreas*. 
+   *Section* with one carriageway decomposed into individual *TrafficAreas* (blue) and *AuxiliaryTrafficAreas* (purple). 
 
    
 .. _fig_sections2:
@@ -555,7 +555,7 @@ TrafficAreas and AuxiliaryTrafficAreas
    :align: center
    :name:  fig_section_examples2
 
-   *Section* with two carriageways decomposed into individual *(Auxiliary)TrafficAreas*. 
+   *Section* with two carriageways decomposed into individual *TrafficAreas* (blue) and *AuxiliaryTrafficAreas* (purple). 
 
 
 .. _fig_sections3:
@@ -563,7 +563,7 @@ TrafficAreas and AuxiliaryTrafficAreas
    :align: center
    :name:  fig_section_examples3
 
-   *Section* with two carriageways decomposed into individual *(Auxiliary)TrafficAreas* including parking and bus lanes. 
+   *Section* with two carriageways decomposed into individual *TrafficAreas* (blue) including parking and bus lanes and *AuxiliaryTrafficAreas* (purple). 
 
 
 
@@ -1135,24 +1135,27 @@ Concepts for modelling city furniture are provided within a specific `CityFurnit
 
    * **must** contain a unique *gml:id* attribute.
    * **should** be modelled per single object.
-   * **should** contain relevant information such as 2D coordinates, height information (absolute or above the ground), orientation (e.g. azimuth angle) and sign or light type (as citygml class attribute).
+   * **should** contain a *function* attribute according to the CityGML codelist.
+   * **should** contain a *class* attribute (e.g. to indicate sign, light or pole type)
+   * **should** contain relevant information such as 2D coordinates, height information (absolute or above the ground) and orientation (e.g. azimuth angle).
    * **can** use *CityObjectRelations* to indicate validity of a certain traffic sign or light for a specific lane.
 
 * These objects are usually represented with prototypes, which are instantiated multiple times at different locations (implicit geometries). However, it is also possible to model these objects using a simple point representation.
 * Multiple logically connected objects (such as all signs and traffic lights connected to one pole) can be part of a *CityObjectGroup*.
+* Many countries use standardized codes to identify different types of traffic signs (e.g. `Germany <https://en.wikipedia.org/wiki/Road_signs_in_Germany>`_). It is recommended to use these codes as *class* attributes with each traffic sign object. 
 
 
 .. figure:: ../figures/trafficsigns.PNG
    :align: center
    :name:  fig_cityfurniture1
    
-   Traffic signs and corresponding poles modelled as individual CityFurniture objects.
+   Traffic signs (top) and traffic lights (bottom) and corresponding poles modelled as individual CityFurniture objects.
 
 .. figure:: ../figures/busstop.PNG
    :align: center
    :name:  fig_cityfurniture2
    
-   Bus stop and other city funrniture objects with corresponding function attributes.
+   Bus stop and other city furniture objects with corresponding function attributes.
 
 
 Vegetation
