@@ -800,19 +800,19 @@
 <figure class="align-center" id="fig-section-examples1">
 <span id="fig-sections1"></span><img alt="../_images/trafficareas_onecarriageway.PNG" src="../_images/trafficareas_onecarriageway.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 10 </span><span class="caption-text"><em>Section</em> with one carriageway decomposed into individual <em>(Auxiliary)TrafficAreas</em>.</span><a class="headerlink" href="#fig-section-examples1" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 10 </span><span class="caption-text"><em>Section</em> with one carriageway decomposed into individual <em>TrafficAreas</em> (blue) and <em>AuxiliaryTrafficAreas</em> (purple).</span><a class="headerlink" href="#fig-section-examples1" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="fig-section-examples2">
 <span id="fig-sections2"></span><img alt="../_images/trafficareas_twocarriageway.PNG" src="../_images/trafficareas_twocarriageway.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 11 </span><span class="caption-text"><em>Section</em> with two carriageways decomposed into individual <em>(Auxiliary)TrafficAreas</em>.</span><a class="headerlink" href="#fig-section-examples2" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 11 </span><span class="caption-text"><em>Section</em> with two carriageways decomposed into individual <em>TrafficAreas</em> (blue) and <em>AuxiliaryTrafficAreas</em> (purple).</span><a class="headerlink" href="#fig-section-examples2" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="fig-section-examples3">
 <span id="fig-sections3"></span><img alt="../_images/buslayby.PNG" src="../_images/buslayby.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 12 </span><span class="caption-text"><em>Section</em> with two carriageways decomposed into individual <em>(Auxiliary)TrafficAreas</em> including parking and bus lanes.</span><a class="headerlink" href="#fig-section-examples3" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 12 </span><span class="caption-text"><em>Section</em> with two carriageways decomposed into individual <em>TrafficAreas</em> (blue) including parking and bus lanes and <em>AuxiliaryTrafficAreas</em> (purple).</span><a class="headerlink" href="#fig-section-examples3" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -1400,24 +1400,27 @@
 <ul class="simple">
 <li><p><strong>must</strong> contain a unique <em>gml:id</em> attribute.</p></li>
 <li><p><strong>should</strong> be modelled per single object.</p></li>
-<li><p><strong>should</strong> contain relevant information such as 2D coordinates, height information (absolute or above the ground), orientation (e.g. azimuth angle) and sign or light type (as citygml class attribute).</p></li>
+<li><p><strong>should</strong> contain a <em>function</em> attribute according to the CityGML codelist.</p></li>
+<li><p><strong>should</strong> contain a <em>class</em> attribute (e.g. to indicate sign, light or pole type)</p></li>
+<li><p><strong>should</strong> contain relevant information such as 2D coordinates, height information (absolute or above the ground) and orientation (e.g. azimuth angle).</p></li>
 <li><p><strong>can</strong> use <em>CityObjectRelations</em> to indicate validity of a certain traffic sign or light for a specific lane.</p></li>
 </ul>
 </div>
 <ul class="simple">
 <li><p>These objects are usually represented with prototypes, which are instantiated multiple times at different locations (implicit geometries). However, it is also possible to model these objects using a simple point representation.</p></li>
 <li><p>Multiple logically connected objects (such as all signs and traffic lights connected to one pole) can be part of a <em>CityObjectGroup</em>.</p></li>
+<li><p>Many countries use standardized codes to identify different types of traffic signs (e.g. <a class="reference external" href="https://en.wikipedia.org/wiki/Road_signs_in_Germany">Germany</a>). It is recommended to use these codes as <em>class</em> attributes with each traffic sign object.</p></li>
 </ul>
 <figure class="align-center" id="fig-cityfurniture1">
 <img alt="../_images/trafficsigns.PNG" src="../_images/trafficsigns.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 37 </span><span class="caption-text">Traffic signs and corresponding poles modelled as individual CityFurniture objects.</span><a class="headerlink" href="#fig-cityfurniture1" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 37 </span><span class="caption-text">Traffic signs (top) and traffic lights (bottom) and corresponding poles modelled as individual CityFurniture objects.</span><a class="headerlink" href="#fig-cityfurniture1" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="fig-cityfurniture2">
 <img alt="../_images/busstop.PNG" src="../_images/busstop.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 38 </span><span class="caption-text">Bus stop and other city funrniture objects with corresponding function attributes.</span><a class="headerlink" href="#fig-cityfurniture2" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 38 </span><span class="caption-text">Bus stop and other city furniture objects with corresponding function attributes.</span><a class="headerlink" href="#fig-cityfurniture2" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
