@@ -33,8 +33,6 @@ The following related publication explains concepts of the CityGML 3.0 Transport
   url      = {https://doi.org/10.3390/ijgi9100603},
    }
 
-|handshake-o| Acknowledgement
-++++++++++++++++++++++++++++++
 
 
 |envelope|  Contact 
