@@ -60,6 +60,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#three-levels-of-granularity">2.2.2. Three levels of granularity</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#required-and-recommended-attributes">2.2.3. Required and recommended attributes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#codelists">2.2.4. Codelists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#generic-attributes">2.2.5. Generic attributes</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#geometric-representations">2.3. Geometric representations</a><ul>
@@ -343,8 +344,6 @@
 <li><p><em>TrafficSpaces</em> should contain information which <em>Section</em> or <em>Intersection</em> they belong to. This is implicitly given due to the hierarchal file structure of a GML encoded CityGML document.</p></li>
 <li><p><em>(Auxiliary)TrafficAreas</em> should contain a <em>function</em> attribute indicating their type (e.g. driving lane, sidewalk, parking lane, bike lane, etc.)</p></li>
 <li><p><em>(Auxiliary)TrafficAreas</em> can contain a <em>surface material</em> attribute.</p></li>
-<li><p><em>(Auxiliary)TrafficAreas</em> should contain information on individual surface areas (e.g. in square meter) as generic attributes.</p></li>
-<li><p>Depending on intended applications additional generic attributes are possible (e.g. pavement rating, maximum speed, number of lanes, etc.).</p></li>
 </ul>
 </div>
 </section>
@@ -528,6 +527,14 @@
 </tbody>
 </table>
 </section>
+<section id="generic-attributes">
+<h3><span class="section-number">2.2.5. </span>Generic attributes<a class="headerlink" href="#generic-attributes" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>While CityGML provides some standardized attributes such as <em>function</em>, <em>usage</em> or <em>surface material</em>, it is possible to create and use <em>generic attributes</em>.</p></li>
+<li><p><em>(Auxiliary)TrafficAreas</em> should contain information on individual surface areas (e.g. in square meter) as generic attributes.</p></li>
+<li><p>Depending on intended applications additional generic attributes are possible (e.g. pavement rating, maximum speed, number of lanes, etc.).</p></li>
+</ul>
+</section>
 </section>
 <section id="geometric-representations">
 <h2><span class="section-number">2.3. </span>Geometric representations<a class="headerlink" href="#geometric-representations" title="Permalink to this heading"></a></h2>
@@ -536,7 +543,7 @@
 <li><p>Spatial representations can have 0-, 1-, 2-, or 3-dimensional extents depending on the respective feature type and Levels of Detail.</p></li>
 <li><p>CityGML makes use of different kinds of aggregations of geometries like spatial aggregates (<em>MultiPoint, MultiCurve, MultiSurface, MultiSolid</em>) and composites (<em>CompositeCurve, CompositeSurface, CompositeSolid</em>).</p></li>
 <li><p>Volumetric shapes are represented in ISO 19107 according to the so-called <em>Boundary Representation (B-Rep)</em>.</p></li>
-<li><p>CityGML 3.0 supports point cloud geometries. Point clouds can either be provided inline within a CityGML file or as reference to external point cloud files of common file types such as [LAS](<a class="reference external" href="https://www.ogc.org/standards/LAS">https://www.ogc.org/standards/LAS</a>) or LAZ.</p></li>
+<li><p>CityGML 3.0 supports point cloud geometries. Point clouds can either be provided inline within a CityGML file or as reference to external point cloud files of common file types such as <a class="reference external" href="https://www.ogc.org/standards/LAS">LAS</a> or LAZ.</p></li>
 <li><p>Recommendations for modelling <em>Roads</em> using polygonal (surface-based) representations are given in this document.</p></li>
 <li><p>For more general recommendations on using geometries in CityGML, please refer to <a class="reference external" href="https://en.wiki.quality.sig3d.org/index.php?title=Modeling_Guide_for_3D_Objects_-_Part_1:_Basics_(Rules_for_Validating_GML_Geometries_in_CityGML)">this guideline</a></p></li>
 </ul>
@@ -556,7 +563,7 @@
 <h3><span class="section-number">2.3.2. </span>Levels of Detail (LoD)<a class="headerlink" href="#levels-of-detail-lod" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>The CityGML Conceptual Model differentiates four consecutive Levels of Detail (LOD 0-3).</p></li>
-<li><p>CityGML datasets can but do not have to contain multiple geometries for each object in different LODs simultaneously.</p></li>
+<li><p>CityGML datasets can (but do not have to) contain multiple geometries for each object in different LODs simultaneously.</p></li>
 <li><p>Levels of Detail are no longer associated with the degree of semantic decomposition of city objects and refer to the spatial representations only.</p></li>
 <li><p>In order to maintain the ability for a semantic decomposition of transportation objects, three levels of granularity are introduced.</p></li>
 </ul>
@@ -657,7 +664,7 @@
 <li><p>In case a <em>Road</em> does not have a name, logical aggregations of underlying <em>Sections</em> and <em>Intersections</em> should be performed.</p></li>
 <li><p>Multiple <em>Roads</em> can share the same <em>Intersection</em>.</p></li>
 <li><p>Long uninterrupted <em>Roads</em> (e.g. freeways or motorways) can be segmented into multiple <em>Sections</em> directly connected to each other (without intermediate <em>Intersections</em>).</p></li>
-<li><p><a class="reference internal" href="#roads1"><span class="std std-numref">Figure 6</span></a> shows three <em>Road</em> objects highlighted in purple, yellow and green. Not that these <em>Roads</em> have shared <em>Intersections</em></p></li>
+<li><p><a class="reference internal" href="#roads1"><span class="std std-numref">Figure 6</span></a> shows three <em>Road</em> objects highlighted in purple, yellow and green. Note that these <em>Roads</em> have shared <em>Intersections</em></p></li>
 </ul>
 <figure class="align-center" id="id6">
 <span id="roads1"></span><img alt="../_images/roads.PNG" src="../_images/roads.PNG" />

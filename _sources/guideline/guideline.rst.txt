@@ -156,9 +156,7 @@ Required and recommended attributes
    * *TrafficSpaces* should contain information which *Section* or *Intersection* they belong to. This is implicitly given due to the hierarchal file structure of a GML encoded CityGML document.
    * *(Auxiliary)TrafficAreas* should contain a *function* attribute indicating their type (e.g. driving lane, sidewalk, parking lane, bike lane, etc.)
    * *(Auxiliary)TrafficAreas* can contain a *surface material* attribute.
-   * *(Auxiliary)TrafficAreas* should contain information on individual surface areas (e.g. in square meter) as generic attributes.
-   * Depending on intended applications additional generic attributes are possible (e.g. pavement rating, maximum speed, number of lanes, etc.).
-
+ 
 
 Codelists
 -----------
@@ -281,13 +279,20 @@ The attribute *surfaceMaterial* specifies the type of pavement and can be used b
      - 10
 
 
+Generic attributes
+-------------------------------
+* While CityGML provides some standardized attributes such as *function*, *usage* or *surface material*, it is possible to create and use *generic attributes*.
+* *(Auxiliary)TrafficAreas* should contain information on individual surface areas (e.g. in square meter) as generic attributes.
+* Depending on intended applications additional generic attributes are possible (e.g. pavement rating, maximum speed, number of lanes, etc.).
+
+
 Geometric representations
 ==========================
 * Spatial properties of all CityGML feature types are represented using the geometry classes defined in ISO 19107. 
 * Spatial representations can have 0-, 1-, 2-, or 3-dimensional extents depending on the respective feature type and Levels of Detail.
 * CityGML makes use of different kinds of aggregations of geometries like spatial aggregates (*MultiPoint, MultiCurve, MultiSurface, MultiSolid*) and composites (*CompositeCurve, CompositeSurface, CompositeSolid*).
 * Volumetric shapes are represented in ISO 19107 according to the so-called *Boundary Representation (B-Rep)*. 
-* CityGML 3.0 supports point cloud geometries. Point clouds can either be provided inline within a CityGML file or as reference to external point cloud files of common file types such as [LAS](https://www.ogc.org/standards/LAS) or LAZ.
+* CityGML 3.0 supports point cloud geometries. Point clouds can either be provided inline within a CityGML file or as reference to external point cloud files of common file types such as `LAS <https://www.ogc.org/standards/LAS>`_ or LAZ.
 * Recommendations for modelling *Roads* using polygonal (surface-based) representations are given in this document.
 * For more general recommendations on using geometries in CityGML, please refer to `this guideline <https://en.wiki.quality.sig3d.org/index.php?title=Modeling_Guide_for_3D_Objects_-_Part_1:_Basics_(Rules_for_Validating_GML_Geometries_in_CityGML)>`_
 
@@ -307,7 +312,7 @@ Levels of Detail (LoD)
 -------------------------
 
 * The CityGML Conceptual Model differentiates four consecutive Levels of Detail (LOD 0-3).
-* CityGML datasets can but do not have to contain multiple geometries for each object in different LODs simultaneously.
+* CityGML datasets can (but do not have to) contain multiple geometries for each object in different LODs simultaneously.
 * Levels of Detail are no longer associated with the degree of semantic decomposition of city objects and refer to the spatial representations only. 
 * In order to maintain the ability for a semantic decomposition of transportation objects, three levels of granularity are introduced.
 
@@ -403,7 +408,7 @@ Transportation objects such as *Roads, Tracks,* or *Railways* are defined as spe
 * In case a *Road* does not have a name, logical aggregations of underlying *Sections* and *Intersections* should be performed.
 * Multiple *Roads* can share the same *Intersection*.
 * Long uninterrupted *Roads* (e.g. freeways or motorways) can be segmented into multiple *Sections* directly connected to each other (without intermediate *Intersections*).
-* :numref:`roads1` shows three *Road* objects highlighted in purple, yellow and green. Not that these *Roads* have shared *Intersections*
+* :numref:`roads1` shows three *Road* objects highlighted in purple, yellow and green. Note that these *Roads* have shared *Intersections*
 
 .. _roads1:
 .. figure:: ../figures/roads.PNG
