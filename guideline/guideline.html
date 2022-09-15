@@ -1400,7 +1400,7 @@
 <ul class="simple">
 <li><p><strong>must</strong> contain a unique <em>gml:id</em> attribute.</p></li>
 <li><p><strong>should</strong> be modelled per single object.</p></li>
-<li><p><strong>should</strong> contain relevant information such as 2D coordinates, height information (absolute or above the ground), orientation (e.g. azimuth angle) and sign or light type.</p></li>
+<li><p><strong>should</strong> contain relevant information such as 2D coordinates, height information (absolute or above the ground), orientation (e.g. azimuth angle) and sign or light type (as citygml class attribute).</p></li>
 <li><p><strong>can</strong> use <em>CityObjectRelations</em> to indicate validity of a certain traffic sign or light for a specific lane.</p></li>
 </ul>
 </div>
@@ -1408,10 +1408,16 @@
 <li><p>These objects are usually represented with prototypes, which are instantiated multiple times at different locations (implicit geometries). However, it is also possible to model these objects using a simple point representation.</p></li>
 <li><p>Multiple logically connected objects (such as all signs and traffic lights connected to one pole) can be part of a <em>CityObjectGroup</em>.</p></li>
 </ul>
-<figure class="align-center" id="fig-cityfurniture">
-<img alt="../_images/cityfurniture_group.PNG" src="../_images/cityfurniture_group.PNG" />
+<figure class="align-center" id="fig-cityfurniture1">
+<img alt="../_images/trafficsigns.PNG" src="../_images/trafficsigns.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 37 </span><span class="caption-text">Individual CityFurniture objects with different functions part of a CityObjectGroup.</span><a class="headerlink" href="#fig-cityfurniture" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 37 </span><span class="caption-text">Traffic signs and corresponding poles modelled as individual CityFurniture objects.</span><a class="headerlink" href="#fig-cityfurniture1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="fig-cityfurniture2">
+<img alt="../_images/busstop.PNG" src="../_images/busstop.PNG" />
+<figcaption>
+<p><span class="caption-number">Figure 38 </span><span class="caption-text">Bus stop and other city funrniture objects with corresponding function attributes.</span><a class="headerlink" href="#fig-cityfurniture2" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -1426,7 +1432,7 @@
 <figure class="align-center" id="fig-vegetation">
 <img alt="../_images/vegetation.PNG" src="../_images/vegetation.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 38 </span><span class="caption-text">Vegetation objects such as trees represented using abstract (left) and more detailed (right) 3D models.</span><a class="headerlink" href="#fig-vegetation" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 39 </span><span class="caption-text">Vegetation objects such as trees represented using abstract (left) and more detailed (right) 3D models.</span><a class="headerlink" href="#fig-vegetation" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
