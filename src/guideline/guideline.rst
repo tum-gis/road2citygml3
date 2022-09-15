@@ -1135,18 +1135,24 @@ Concepts for modelling city furniture are provided within a specific `CityFurnit
 
    * **must** contain a unique *gml:id* attribute.
    * **should** be modelled per single object.
-   * **should** contain relevant information such as 2D coordinates, height information (absolute or above the ground), orientation (e.g. azimuth angle) and sign or light type.
+   * **should** contain relevant information such as 2D coordinates, height information (absolute or above the ground), orientation (e.g. azimuth angle) and sign or light type (as citygml class attribute).
    * **can** use *CityObjectRelations* to indicate validity of a certain traffic sign or light for a specific lane.
 
 * These objects are usually represented with prototypes, which are instantiated multiple times at different locations (implicit geometries). However, it is also possible to model these objects using a simple point representation.
 * Multiple logically connected objects (such as all signs and traffic lights connected to one pole) can be part of a *CityObjectGroup*.
 
 
-.. figure:: ../figures/cityfurniture_group.PNG
+.. figure:: ../figures/trafficsigns.PNG
    :align: center
-   :name:  fig_cityfurniture
+   :name:  fig_cityfurniture1
    
-   Individual CityFurniture objects with different functions part of a CityObjectGroup.
+   Traffic signs and corresponding poles modelled as individual CityFurniture objects.
+
+.. figure:: ../figures/busstop.PNG
+   :align: center
+   :name:  fig_cityfurniture2
+   
+   Bus stop and other city funrniture objects with corresponding function attributes.
 
 
 Vegetation
