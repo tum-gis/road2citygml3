@@ -1194,6 +1194,7 @@ Dynamizer
 ================================
 * The `Dynamizer module <https://docs.ogc.org/is/20-010/20-010.html#toc34>`_ provides the concepts that enable representation of time-varying data for city object properties as well as for integrating sensors with 3D city models.
 * In the context of street space modelling, this can be used for linking driving lanes with dynamic information on induction loops or for representing traffic light signals.
+* This `article by \Chaturvedi & Kolbe <https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/IV-2-W1/31/2016/>`_ explains concepts for integration dynamic information (such as sensors) with semantic 3D city models.
 
 .. admonition:: Definition
    :class: important
