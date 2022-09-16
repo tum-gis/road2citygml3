@@ -135,7 +135,7 @@ For defining different levels of semantic decomposition for transportation objec
    :align: center
    :name:  fig_granularity
    
-   Three levels of granularity (lane, way and area) for representating *Roads*. 
+   Three levels of granularity (lane, way and area) for representing *Roads*. 
 
 
 
