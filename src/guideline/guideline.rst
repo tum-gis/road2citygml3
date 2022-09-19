@@ -135,9 +135,14 @@ For defining different levels of semantic decomposition for transportation objec
    :align: center
    :name:  fig_granularity
    
-   Three levels of granularity (lane, way and area) for representing *Roads*. 
+   Three levels of granularity  for polygonal representations of *Roads*. 
 
-
+.. _granularitylane:
+.. figure:: ../figures/granularity_linear.PNG
+   :align: center
+   :name:  fig_granularitylinear
+   
+   Three levels of granularity (area, way and lane) for linear representations of *Roads* (red = driving, blue = pedestrian, green = bicycle). 
 
 Required and recommended attributes
 ---------------------------------------
