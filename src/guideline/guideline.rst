@@ -14,7 +14,7 @@ Motivation
    :align: center
    :name:  fig_brigseye
    
-   Digital 3D streetspace model including road infrastructure, city furniture, vegetation and buildings.
+   Digital 3D streetspace model including road infrastructure, city furniture, vegetation and buildings (own illustration based on SketchUp model).
 
 Scope
 =====
@@ -51,11 +51,15 @@ The conceptual model of CityGML version 3.0 as well as relevant publications in 
 
 Data downloads
 ===============
-.. tip::
+.. admonition:: Hint
+   :class: important
+
    * Most examples datasets presented in in section 4  can be downloaded from `this repository <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation>`_.
    * This includes  `basic <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation/Basic%20examples>`_ as well as `real-world <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation/Real-world%20examples>`_ examples.
 
-.. tip::
+.. admonition:: Hint
+   :class: important
+
    * The open-source converter r:trån reads road network models in the OpenDRIVE data format and transforms them to the virtual 3D city model standard CityGML (versions 2.0 and 3.0).
    * Find more information on this converter on the corresponding `GitHub page. <https://github.com/tum-gis/rtron>`_ 
 
@@ -135,14 +139,14 @@ For defining different levels of semantic decomposition for transportation objec
    :align: center
    :name:  fig_granularity
    
-   Three levels of granularity  for polygonal representations of *Roads*. 
+   Three levels of granularity  for polygonal representations of *Roads* (own illustration based on SketchUp model). 
 
 .. _granularitylane:
 .. figure:: ../figures/granularity_linear.PNG
    :align: center
    :name:  fig_granularitylinear
    
-   Three levels of granularity (area, way and lane) for linear representations of *Roads* (red = driving, blue = pedestrian, green = bicycle). 
+   Three levels of granularity (area, way and lane) for linear representations of *Roads* (red = driving, blue = pedestrian, green = bicycle) (own illustration based on SketchUp model). 
 
 Required and recommended attributes
 ---------------------------------------
@@ -419,7 +423,7 @@ Transportation objects such as *Roads, Tracks,* or *Railways* are defined as spe
 .. figure:: ../figures/roads.PNG
    :align: center
    
-   Three *Road* objects highlighted in purple, yellow and green with shared *Intersections*. 
+   Three *Road* objects highlighted in purple, yellow and green with shared *Intersections* (own illustration based on SketchUp model). 
 
 
 
@@ -456,7 +460,7 @@ Sections
    :align: center
    :name:  fig_section_examples
 
-   Typical example of a *Section* (surrounded with orange lines) between two intersections.
+   Typical example of a *Section* (surrounded with orange lines) between two intersections (own illustration based on SketchUp model).
 
 
 
@@ -482,7 +486,7 @@ Intersections
    :align: center
    
 
-   Two *Intersections* (highlighted in blue).
+   Two *Intersections* (highlighted in blue) (own illustration based on SketchUp model).
 
 
 
@@ -552,7 +556,7 @@ TrafficAreas and AuxiliaryTrafficAreas
    :align: center
    :name:  fig_section_examples1
 
-   *Section* with one carriageway decomposed into individual *TrafficAreas* (blue) and *AuxiliaryTrafficAreas* (purple). 
+   *Section* with one carriageway decomposed into individual *TrafficAreas* (blue) and *AuxiliaryTrafficAreas* (purple) (own illustration based on SketchUp model). 
 
    
 .. _fig_sections2:
@@ -560,7 +564,7 @@ TrafficAreas and AuxiliaryTrafficAreas
    :align: center
    :name:  fig_section_examples2
 
-   *Section* with two carriageways decomposed into individual *TrafficAreas* (blue) and *AuxiliaryTrafficAreas* (purple). 
+   *Section* with two carriageways decomposed into individual *TrafficAreas* (blue) and *AuxiliaryTrafficAreas* (purple) (own illustration based on SketchUp model). 
 
 
 .. _fig_sections3:
@@ -568,7 +572,7 @@ TrafficAreas and AuxiliaryTrafficAreas
    :align: center
    :name:  fig_section_examples3
 
-   *Section* with two carriageways decomposed into individual *TrafficAreas* (blue) including parking and bus lanes and *AuxiliaryTrafficAreas* (purple). 
+   *Section* with two carriageways decomposed into individual *TrafficAreas* (blue) including parking and bus lanes and *AuxiliaryTrafficAreas* (purple) (own illustration based on SketchUp model). 
 
 
 
@@ -1208,7 +1212,8 @@ Dynamizer
 
 Interactive online demos
 +++++++++++++++++++++++++++++++++
-.. tip::
+.. admonition:: Hint
+   :class: important
    
    
    A collection of interactive visualizations of streetspace models for cities including New York City, Melbourne, Munich, and Tokyo `can be found here <https://wiki.tum.de/display/gisproject/Online+Demo+Collection>`_. 
