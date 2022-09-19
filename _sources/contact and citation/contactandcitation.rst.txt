@@ -34,6 +34,9 @@ The following related publication explains concepts of the CityGML 3.0 Transport
    }
 
 
+|handshake-o| Acknowledgement
+++++++++++++++++++++++++++++++++
+Some of the  conceptual illustrations in this document were created based on models openly available on the `Sketchup Warehouse <https://3dwarehouse.sketchup.com/>`_. The guideline is inspired by the `Road2Simulation guideline <https://zenodo.org/record/3375550>`_ for the OpenDRIVE standard.
 
 |envelope|  Contact 
 +++++++++++++++++++++++++++++++++++++++++++
