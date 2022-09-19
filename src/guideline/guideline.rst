@@ -1205,7 +1205,7 @@ Interactive online demos
 +++++++++++++++++++++++++++++++++
 .. tip::
    
-   The  `3DCityDB Web-Map-Client <https://www.3dcitydb.org/3dcitydb/>`_ is a web based front-end for 3D visualization and interactive exploration of semantic 3D city models.
+   
    A collection of interactive visualizations of streetspace models for cities including New York City, Melbourne, Munich, and Tokyo `can be found here <https://wiki.tum.de/display/gisproject/Online+Demo+Collection>`_. 
 
 
