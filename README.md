@@ -19,7 +19,7 @@ If you find this documentation helpful for your work, please consider citing it 
 
 ```plain
 @manual{Beil_Road2CityGML3_2022,
-        author = {Beil, Christof and Kolbe, Thomas H. and Tatjana Kutzner and Benedikt Schwab},
+        author = {Beil, Christof and Tatjana Kutzner and Benedikt Schwab and Kolbe, Thomas H.},
         title  = {Road2CityGML3},  
         url    = {https://github.com/tum-gis/road2citygml3},
         year   = {2022}

@@ -12,7 +12,7 @@ If you find this documentation helpful for your work, please consider citing it 
 .. code-block:: 
 
    @manual{Beil_Road2CityGML3_2022,
-           author = {Beil, Christof and Kolbe, Thomas H. and Tatjana Kutzner and Benedikt Schwab},
+           author = {Beil, Christof and Tatjana Kutzner and Benedikt Schwab and Kolbe, Thomas H.},
            title  = {Road2CityGML3},  
            url    = {https://github.com/tum-gis/road2citygml3},
            year   = {2022}
@@ -36,7 +36,7 @@ The following related publication explains concepts of the CityGML 3.0 Transport
 
 |handshake-o| Acknowledgement
 ++++++++++++++++++++++++++++++++
-Some of the  conceptual illustrations in this document were created based on models openly available on the `SketchUp Warehouse <https://3dwarehouse.sketchup.com/user/500647bb-30cf-4f44-b23d-1680d091bb14/Alex-R>`_. The guideline is inspired by the `Road2Simulation guideline <https://zenodo.org/record/3375550>`_ for the OpenDRIVE standard.
+Some of the  conceptual 2D illustrations in this document were created based on 3D models openly available on the `SketchUp Warehouse <https://3dwarehouse.sketchup.com/user/500647bb-30cf-4f44-b23d-1680d091bb14/Alex-R>`_. The guideline is inspired by the `Road2Simulation guideline <https://zenodo.org/record/3375550>`_ for the OpenDRIVE standard.
 
 |envelope|  Contact 
 +++++++++++++++++++++++++++++++++++++++++++
