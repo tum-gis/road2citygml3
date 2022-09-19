@@ -4,15 +4,15 @@ authors:
 - family-names: "Beil"
   given-names: "Christof"
   orcid: "https://orcid.org/0000-0002-6231-2769"
-- family-names: "Kolbe"
-  given-names: "Thomas H."
-  orcid: "https://orcid.org/0000-0003-1456-0423"
 - family-names: "Kutzner"
   given-names: "Tatjana"
   orcid: "0000-0001-9085-1842"
 - family-names: "Schwab"
   given-names: "Benedikt"
   orcid: "0000-0002-4618-2538"
+- family-names: "Kolbe"
+  given-names: "Thomas H."
+  orcid: "https://orcid.org/0000-0003-1456-0423"
 title: "Road2CityGML3"
 version: 0.9
 date-released: 2022-08-23
