@@ -596,6 +596,7 @@
 <li><p>In addition to the adaption of road surfaces to the terrain, subtle geometric features such as kerbstones or traffic islands can be modelled.</p></li>
 <li><p>It is recommended to derive these structures from 2D data by extruding respective <em>(Auxiliary)TrafficAreas</em> by a certain amount (e.g. 0.15m).</p></li>
 <li><p>MultiSurface geometries are recommended for these objects.</p></li>
+<li><p>It is possible to use volumetric <em>Solid</em> geometries for representing subtle structures such as kerbstones or traffic islands. In this case, the surfaces of these <em>Solids</em> correspond to <em>TrafficAreas</em> as they bound the respective object towards the ground. The volumetric space above these objects, however, should be modelled as (<em>Auxiliary)TrafficSpaces</em>.</p></li>
 </ul>
 <figure class="align-center" id="fig-kerbstone">
 <img alt="../_images/kerbstone.PNG" src="../_images/kerbstone.PNG" />
