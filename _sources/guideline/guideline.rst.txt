@@ -72,6 +72,7 @@ Licence and disclaimer
    * In no case can the data providers be held liable for damages, caused directly or indirectly, by using or working with these datasets or software tools.  
    * Since the data provided here has been derived from Open Data, all original terms of use and conditions apply here too.
    * Aerial imagery included in this document is derived from Open Data sources.  
+   * Some of the conceptual illustrations in this document were created based on 3D models available in the `SketchUp Warehouse <https://3dwarehouse.sketchup.com/user/500647bb-30cf-4f44-b23d-1680d091bb14/Alex-R>`_.
 
 
 General concepts and definitions
@@ -337,7 +338,7 @@ Adaption to the terrain
    :align: center
    :name:  fig_adaptiontoterrain
    
-   Adaption of road surfaces to the terrain using breaklines and triangulations.
+   Adaption of road surfaces (TrafficAreas) to the terrain using breaklines and triangulations.
 
 
 
@@ -564,6 +565,7 @@ TrafficAreas and AuxiliaryTrafficAreas
 
    *Section* with one carriageway decomposed into individual *TrafficAreas* (blue) and *AuxiliaryTrafficAreas* (purple) (own illustration based on SketchUp model). 
 
+The median and grass areas in this example is modelled as *AuxiliaryTrafficAreas* with an attribute *surface material* = "grass". In addition these areas can be modelled as *Vegetation* objects (*PLantCover*) linked to corresponding *AuxiliaryTrafficAreas* using a *CityObjectRelation* with the value "equal". This approach can be helpful for accurately calculating (non-)sealed surfaces within a city.
    
 .. _fig_sections2:
 .. figure:: ../figures/trafficareas_twocarriageway.PNG
@@ -580,7 +582,7 @@ TrafficAreas and AuxiliaryTrafficAreas
 
    *Section* with two carriageways decomposed into individual *TrafficAreas* (blue) including parking and bus lanes and *AuxiliaryTrafficAreas* (purple) (own illustration based on SketchUp model). 
 
-
+While kerbstones normally are intended to separate driving lanes from pedestrian walking areas (and thus are considered *AuxiliaryTrafficAreas*) one could argue, that kerbstones can be used by pedestrians and thus should be modelled as *TrafficAreas*. Depending on intended applications, either categorization of kerbstones is possible.
 
 Clearance Spaces
 ===========================
@@ -1190,7 +1192,8 @@ Vegetation
 Concepts for modelling vegetation are provided within a specific `Vegetation module. <https://docs.ogc.org/is/20-010/20-010.html#toc40>`_
 
 * Similar to *CityFurniture*, these objects are usually represented with prototypes using implicit geometries.
-* Vegetation can be represented either as solitary vegetation objects, such as trees, bushes and ferns, or as vegetation areas that are covered by plants of a given species or a typical mixture of plant species, such as forests, steppes and wet meadows.
+* Vegetation can be represented either as *SolitaryVegetationObjects*, such as trees, bushes and ferns, or as vegetation areas (*PlantCovers*) of a given species or a typical mixture of plant species, such as forests, steppes and wet meadows. 
+* *PlantCovers* can be equal to *AuxiliaryTrafficAreas* (e.g. green areas or medians within a Road). This relation can be expressed using *CityObjectRelations*. This approach can be helpful for accurately calculating (non-)sealed surfaces within a city.
 * *Vegetation* models can be abstract representations derived from height, trunk diameter and crown diameter information or more realistic 3D models.
 
 .. figure:: ../figures/vegetation.PNG

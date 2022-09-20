@@ -261,6 +261,7 @@
 <li><p>In no case can the data providers be held liable for damages, caused directly or indirectly, by using or working with these datasets or software tools.</p></li>
 <li><p>Since the data provided here has been derived from Open Data, all original terms of use and conditions apply here too.</p></li>
 <li><p>Aerial imagery included in this document is derived from Open Data sources.</p></li>
+<li><p>Some of the conceptual illustrations in this document were created based on 3D models available in the <a class="reference external" href="https://3dwarehouse.sketchup.com/user/500647bb-30cf-4f44-b23d-1680d091bb14/Alex-R">SketchUp Warehouse</a>.</p></li>
 </ul>
 </div>
 </section>
@@ -585,7 +586,7 @@
 <figure class="align-center" id="fig-adaptiontoterrain">
 <img alt="../_images/adaptiontoterrain.PNG" src="../_images/adaptiontoterrain.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 5 </span><span class="caption-text">Adaption of road surfaces to the terrain using breaklines and triangulations.</span><a class="headerlink" href="#fig-adaptiontoterrain" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 5 </span><span class="caption-text">Adaption of road surfaces (TrafficAreas) to the terrain using breaklines and triangulations.</span><a class="headerlink" href="#fig-adaptiontoterrain" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -816,6 +817,7 @@
 <p><span class="caption-number">Figure 12 </span><span class="caption-text"><em>Section</em> with one carriageway decomposed into individual <em>TrafficAreas</em> (blue) and <em>AuxiliaryTrafficAreas</em> (purple) (own illustration based on SketchUp model).</span><a class="headerlink" href="#fig-section-examples1" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
+<p>The median and grass areas in this example is modelled as <em>AuxiliaryTrafficAreas</em> with an attribute <em>surface material</em> = “grass”. In addition these areas can be modelled as <em>Vegetation</em> objects (<em>PLantCover</em>) linked to corresponding <em>AuxiliaryTrafficAreas</em> using a <em>CityObjectRelation</em> with the value “equal”. This approach can be helpful for accurately calculating (non-)sealed surfaces within a city.</p>
 <figure class="align-center" id="fig-section-examples2">
 <span id="fig-sections2"></span><img alt="../_images/trafficareas_twocarriageway.PNG" src="../_images/trafficareas_twocarriageway.PNG" />
 <figcaption>
@@ -828,6 +830,7 @@
 <p><span class="caption-number">Figure 14 </span><span class="caption-text"><em>Section</em> with two carriageways decomposed into individual <em>TrafficAreas</em> (blue) including parking and bus lanes and <em>AuxiliaryTrafficAreas</em> (purple) (own illustration based on SketchUp model).</span><a class="headerlink" href="#fig-section-examples3" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
+<p>While kerbstones normally are intended to separate driving lanes from pedestrian walking areas (and thus are considered <em>AuxiliaryTrafficAreas</em>) one could argue, that kerbstones can be used by pedestrians and thus should be modelled as <em>TrafficAreas</em>. Depending on intended applications, either categorization of kerbstones is possible.</p>
 </section>
 <section id="clearance-spaces">
 <h2><span class="section-number">3.5. </span>Clearance Spaces<a class="headerlink" href="#clearance-spaces" title="Permalink to this heading"></a></h2>
@@ -1452,7 +1455,8 @@
 <p>Concepts for modelling vegetation are provided within a specific <a class="reference external" href="https://docs.ogc.org/is/20-010/20-010.html#toc40">Vegetation module.</a></p>
 <ul class="simple">
 <li><p>Similar to <em>CityFurniture</em>, these objects are usually represented with prototypes using implicit geometries.</p></li>
-<li><p>Vegetation can be represented either as solitary vegetation objects, such as trees, bushes and ferns, or as vegetation areas that are covered by plants of a given species or a typical mixture of plant species, such as forests, steppes and wet meadows.</p></li>
+<li><p>Vegetation can be represented either as <em>SolitaryVegetationObjects</em>, such as trees, bushes and ferns, or as vegetation areas (<em>PlantCovers</em>) of a given species or a typical mixture of plant species, such as forests, steppes and wet meadows.</p></li>
+<li><p><em>PlantCovers</em> can be equal to <em>AuxiliaryTrafficAreas</em> (e.g. green areas or medians within a Road). This relation can be expressed using <em>CityObjectRelations</em>. This approach can be helpful for accurately calculating (non-)sealed surfaces within a city.</p></li>
 <li><p><em>Vegetation</em> models can be abstract representations derived from height, trunk diameter and crown diameter information or more realistic 3D models.</p></li>
 </ul>
 <figure class="align-center" id="fig-vegetation">
