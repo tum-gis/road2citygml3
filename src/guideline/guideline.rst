@@ -333,6 +333,12 @@ Adaption to the terrain
 * For adapting this data to the terrain it is recommended to create a terrain with breaklines of individual *(Auxiliary)TrafficAreas*.
 * Triangles of this new terrain, that are part of individual *(Auxiliary)TrafficAreas*, can then be used to represent the geometry of those surfaces.
 
+.. figure:: ../figures/adaptiontoterrain.PNG
+   :align: center
+   :name:  fig_adaptiontoterrain
+   
+   Adaption of road surfaces to the terrain using breaklines and triangulations.
+
 
 
 Subtle 3D structures such as raised medians
@@ -1218,6 +1224,11 @@ Interactive online demos
    
    A collection of interactive visualizations of streetspace models for cities including New York City, Melbourne, Munich, and Tokyo `can be found here <https://wiki.tum.de/display/gisproject/Online+Demo+Collection>`_. 
 
-
+.. figure:: ../figures/webclients.PNG
+   :align: center
+   :name:  fig_webclients
+   :target: https://wiki.tum.de/display/gisproject/Online+Demo+Collection
+   
+   Impressions of interactive web-based visualizations of streetspace models for different cities.
 
 
