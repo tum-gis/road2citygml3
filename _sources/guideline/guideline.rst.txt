@@ -1069,7 +1069,7 @@ Roads on Bridges
 ================================
 * *Road* surfaces on a *Bridge* can be modelled as *TrafficAreas* (as part of a *Road*) and *RoofSurfaces* (as part of a *Bridge*) at the same time.
 * In the example shown in :numref:`cityobjectrelation1`, *TrafficArea 6* and *RoofSurface 2* represent the same (geometric) surface but are part of different (semantic) objects.
-* Using CityObjectRelations in order to express this relation is shown in :numref:`cityobjectrelation2`.
+* Using CityObjectRelations in order to express this relation is shown in :numref:`roadonbridge1`.
 
 .. _cityobjectrelation1:
 .. figure:: ../figures/road_bridge.PNG
@@ -1077,16 +1077,28 @@ Roads on Bridges
  
    Shared surfaces by Roads and Bridges using CityObjectRelations
 
-.. _cityobjectrelation2:
-.. figure:: ../figures/cityobjectrelation.PNG
-   :align: center
-  
-   *CityObjectRelation* between a *RoofSurface* and a *TrafficArea* sharing the same part of a Road on a Bridge.
+.. _roadonbridge1:
+.. code-block:: xml
+   :caption: TrafficArea with CityObjectRelation "equal" pointing to corresponding RoofSurface.
+
+   <tran:TrafficArea gml:id="id_trafficarea6">
+      <core:relatedTo>
+         <core:CityObjectRelation>
+            <core:relationType>equal</core:relationType>
+               <core:relatedTo xlink:href="id_roofSurface2"/>
+            </core:CityObjectRelation>
+         </core:relatedTo>
+         <core:lod2MultiSurface>
+            <!Geometry definition>
+         </core:lod2MultiSurface>
+   </tran:TrafficArea>
 
 .. figure:: ../figures/roadbridge.PNG
    :align: center
 
    TrafficAreas part of a Road are simultaneously modelled as RoofSurfaces part of a Bridge.
+
+
 
 Roads through Tunnels
 ================================

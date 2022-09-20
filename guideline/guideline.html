@@ -1332,7 +1332,7 @@
 <ul class="simple">
 <li><p><em>Road</em> surfaces on a <em>Bridge</em> can be modelled as <em>TrafficAreas</em> (as part of a <em>Road</em>) and <em>RoofSurfaces</em> (as part of a <em>Bridge</em>) at the same time.</p></li>
 <li><p>In the example shown in <a class="reference internal" href="#cityobjectrelation1"><span class="std std-numref">Figure 32</span></a>, <em>TrafficArea 6</em> and <em>RoofSurface 2</em> represent the same (geometric) surface but are part of different (semantic) objects.</p></li>
-<li><p>Using CityObjectRelations in order to express this relation is shown in <a class="reference internal" href="#cityobjectrelation2"><span class="std std-numref">Figure 33</span></a>.</p></li>
+<li><p>Using CityObjectRelations in order to express this relation is shown in <a class="reference internal" href="#roadonbridge1"><span class="std std-numref">XML example 5</span></a>.</p></li>
 </ul>
 <figure class="align-center" id="id21">
 <span id="cityobjectrelation1"></span><img alt="../_images/road_bridge.PNG" src="../_images/road_bridge.PNG" />
@@ -1340,16 +1340,26 @@
 <p><span class="caption-number">Figure 32 </span><span class="caption-text">Shared surfaces by Roads and Bridges using CityObjectRelations</span><a class="headerlink" href="#id21" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id22">
-<span id="cityobjectrelation2"></span><img alt="../_images/cityobjectrelation.PNG" src="../_images/cityobjectrelation.PNG" />
-<figcaption>
-<p><span class="caption-number">Figure 33 </span><span class="caption-text"><em>CityObjectRelation</em> between a <em>RoofSurface</em> and a <em>TrafficArea</em> sharing the same part of a Road on a Bridge.</span><a class="headerlink" href="#id22" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
+<div class="literal-block-wrapper docutils container" id="id22">
+<span id="roadonbridge1"></span><div class="code-block-caption"><span class="caption-number">XML example 5 </span><span class="caption-text">TrafficArea with CityObjectRelation “equal” pointing to corresponding RoofSurface.</span><a class="headerlink" href="#id22" title="Permalink to this code"></a></div>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;tran:TrafficArea</span> <span class="na">gml:id=</span><span class="s">&quot;id_trafficarea6&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;core:relatedTo&gt;</span>
+      <span class="nt">&lt;core:CityObjectRelation&gt;</span>
+         <span class="nt">&lt;core:relationType&gt;</span>equal<span class="nt">&lt;/core:relationType&gt;</span>
+            <span class="nt">&lt;core:relatedTo</span> <span class="na">xlink:href=</span><span class="s">&quot;id_roofSurface2&quot;</span><span class="nt">/&gt;</span>
+         <span class="nt">&lt;/core:CityObjectRelation&gt;</span>
+      <span class="nt">&lt;/core:relatedTo&gt;</span>
+      <span class="nt">&lt;core:lod2MultiSurface&gt;</span>
+         <span class="cp">&lt;!Geometry definition&gt;</span>
+      <span class="nt">&lt;/core:lod2MultiSurface&gt;</span>
+<span class="nt">&lt;/tran:TrafficArea&gt;</span>
+</pre></div>
+</div>
+</div>
 <figure class="align-center" id="id23">
 <img alt="../_images/roadbridge.PNG" src="../_images/roadbridge.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 34 </span><span class="caption-text">TrafficAreas part of a Road are simultaneously modelled as RoofSurfaces part of a Bridge.</span><a class="headerlink" href="#id23" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 33 </span><span class="caption-text">TrafficAreas part of a Road are simultaneously modelled as RoofSurfaces part of a Bridge.</span><a class="headerlink" href="#id23" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -1361,7 +1371,7 @@
 <figure class="align-center" id="fig-raodtunnel">
 <img alt="../_images/roadintunnel.PNG" src="../_images/roadintunnel.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 35 </span><span class="caption-text">Roads within a 3D model of a Tunnel.</span><a class="headerlink" href="#fig-raodtunnel" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 34 </span><span class="caption-text">Roads within a 3D model of a Tunnel.</span><a class="headerlink" href="#fig-raodtunnel" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -1374,13 +1384,13 @@
 <figure class="align-center" id="fig-garage">
 <img alt="../_images/garage.PNG" src="../_images/garage.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 36 </span><span class="caption-text">Individual CityFurniture objects with different functions part of a CityObjectGroup.</span><a class="headerlink" href="#fig-garage" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 35 </span><span class="caption-text">Individual CityFurniture objects with different functions part of a CityObjectGroup.</span><a class="headerlink" href="#fig-garage" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="fig-garage1">
 <img alt="../_images/garage1.PNG" src="../_images/garage1.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 37 </span><span class="caption-text">Modelling shared surfaces by Buildings and Roads (e.g. within a parking garage) using CityObjectRelations.</span><a class="headerlink" href="#fig-garage1" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 36 </span><span class="caption-text">Modelling shared surfaces by Buildings and Roads (e.g. within a parking garage) using CityObjectRelations.</span><a class="headerlink" href="#fig-garage1" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -1398,7 +1408,7 @@
 <figure class="align-center" id="fig-streetspace">
 <img alt="../_images/streetspace.PNG" src="../_images/streetspace.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 38 </span><span class="caption-text">Components of a semantic 3D city model relevant for streetspace applications (CityGML model visualized in the Unreal Engine).</span><a class="headerlink" href="#fig-streetspace" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 37 </span><span class="caption-text">Components of a semantic 3D city model relevant for streetspace applications (CityGML model visualized in the Unreal Engine).</span><a class="headerlink" href="#fig-streetspace" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <section id="cityfurniture">
@@ -1427,13 +1437,13 @@
 <figure class="align-center" id="fig-cityfurniture1">
 <img alt="../_images/trafficsigns.PNG" src="../_images/trafficsigns.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 39 </span><span class="caption-text">Traffic signs (top) and traffic lights (bottom) and corresponding poles modelled as individual CityFurniture objects.</span><a class="headerlink" href="#fig-cityfurniture1" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 38 </span><span class="caption-text">Traffic signs (top) and traffic lights (bottom) and corresponding poles modelled as individual CityFurniture objects.</span><a class="headerlink" href="#fig-cityfurniture1" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="fig-cityfurniture2">
 <img alt="../_images/busstop.PNG" src="../_images/busstop.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 40 </span><span class="caption-text">Bus stop and other city furniture objects with corresponding function attributes.</span><a class="headerlink" href="#fig-cityfurniture2" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 39 </span><span class="caption-text">Bus stop and other city furniture objects with corresponding function attributes.</span><a class="headerlink" href="#fig-cityfurniture2" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -1448,7 +1458,7 @@
 <figure class="align-center" id="fig-vegetation">
 <img alt="../_images/vegetation.PNG" src="../_images/vegetation.PNG" />
 <figcaption>
-<p><span class="caption-number">Figure 41 </span><span class="caption-text">Vegetation objects such as trees represented using abstract (left) and more detailed (right) 3D models.</span><a class="headerlink" href="#fig-vegetation" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 40 </span><span class="caption-text">Vegetation objects such as trees represented using abstract (left) and more detailed (right) 3D models.</span><a class="headerlink" href="#fig-vegetation" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -1490,7 +1500,7 @@
 <figure class="align-center" id="fig-webclients">
 <a class="reference external image-reference" href="https://wiki.tum.de/display/gisproject/Online+Demo+Collection"><img alt="../_images/webclients.PNG" src="../_images/webclients.PNG" /></a>
 <figcaption>
-<p><span class="caption-number">Figure 42 </span><span class="caption-text">Impressions of interactive web-based visualizations of streetspace models for different cities.</span><a class="headerlink" href="#fig-webclients" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Figure 41 </span><span class="caption-text">Impressions of interactive web-based visualizations of streetspace models for different cities.</span><a class="headerlink" href="#fig-webclients" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
