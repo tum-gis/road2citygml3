@@ -347,6 +347,7 @@ Subtle 3D structures such as raised medians
 * In addition to the adaption of road surfaces to the terrain, subtle geometric features such as kerbstones or traffic islands can be modelled. 
 * It is recommended to derive these structures from 2D data by extruding respective *(Auxiliary)TrafficAreas* by a certain amount (e.g. 0.15m).
 * MultiSurface geometries are recommended for these objects.
+* It is possible to use volumetric *Solid* geometries for representing subtle structures such as kerbstones or traffic islands. In this case, the surfaces of these *Solids* correspond to *TrafficAreas* as they bound the respective object towards the ground. The volumetric space above these objects, however, should be modelled as (*Auxiliary)TrafficSpaces*. 
 
 .. figure:: ../figures/kerbstone.PNG
    :align: center
