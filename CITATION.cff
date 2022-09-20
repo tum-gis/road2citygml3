@@ -16,7 +16,7 @@ authors:
 title: "Road2CityGML3"
 version: 0.9
 date-released: 2022-08-23
-url: "https://github.com/tum-gis/road2citygml3"
+url: "https://tum-gis.github.io/road2citygml3/"
 preferred-citation:
   type: manual
   authors:
@@ -35,4 +35,4 @@ preferred-citation:
   title: "Road2CityGML3"
   version: 0.9
   year: 2022
-  url: "https://github.com/tum-gis/road2citygml3"
+  url: "https://tum-gis.github.io/road2citygml3/"
