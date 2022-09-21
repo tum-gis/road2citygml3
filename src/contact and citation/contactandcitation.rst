@@ -5,6 +5,15 @@
 Do you have a comment or suggestions for improvement to this documentation? Please create an issue from the corresponding `GitHub repository. <https://github.com/tum-gis/road2citygml3/issues>`_
 
 
+|link| Links
++++++++++++++++++++++++
+
+
+ * `Recording of a presentation on OpenDRIVE and the CityGML Transportation module <https://www.youtube.com/watch?v=YSk3z5haDOM>`_
+ * `Project: Streetspace model of New York City <https://www.asg.ed.tum.de/gis/projekte/new-york-city-3d/>`_
+
+
+
 |file-text|  Citation
 ++++++++++++++++++++++++
 If you find this documentation helpful for your work, please consider citing it as follows.
