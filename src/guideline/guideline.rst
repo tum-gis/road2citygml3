@@ -934,7 +934,7 @@ Four-way Intersection
                <!(Auxiliary)TrafficSpaces with corresponding (Auxiliary)TrafficAreas>
             </tran:Section>
          </tran:section>
-         <tran:intersection xlink:href="#UUID_20542"/>
+         <tran:intersection xlink:href="#UUID_20543"/>
       </tran:Road>
    </core:cityObjectMember>
    <core:cityObjectMember>
