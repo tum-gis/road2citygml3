@@ -1026,6 +1026,18 @@ Motorway entry / exit
    Motorway entries and exits segmented into multiple *Sections*.
 
 
+Complex motorway interchange 
+====================================
+* The following example shows a complex motorway derived from OpenDRIVE data using the open-source tool `r:trån. <https://github.com/tum-gis/rtron>`_ 
+* The interchange is segmented into smaller *Sections* and *Intersections* each further divided into *TrafficAreas* and *AuxiliaryTrafficAreas*.
+
+
+.. _interchange:
+.. figure:: ../figures/interchange.PNG
+   :align: center
+   :name:  fig_interchange
+
+   Motorway interchange available in CityGML 3.0 derived from OpenDRIVE data using the open-source converter r:trån.
 
 Integrated representation of multiple transportation types
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
