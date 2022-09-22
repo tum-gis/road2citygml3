@@ -6,7 +6,7 @@ Motivation
 * The **City Geography Markup Language (CityGML)** is an international OGC standard for the representation and exchange of virtual 3D city and landscape models.
 * LoD 1 and LoD 2 models of buildings are available for a `large number of cities and countries <https://github.com/OloOcki/awesome-citygml>`_. 
 * Data gathering methods such as Mobile Mapping Systems and emerging applications such as **urban digital twins** begin to shift this focus towards models of **road infrastructure**.
-* Several cities (such as New York City, Melbourne, Munich or Singapore) have detailed data on roads and the street space available (usually within an ArcGIS or QGIS environment). However, this data is often structured in different ways (semantically and geometrically). Modelling this data within a common representation framework allows the immediate usage of the data with the same tools for a number of applications. 
+* Several cities (such as New York City, Melbourne, Munich or Singapore) have detailed data on roads and the streetspace available (usually within an ArcGIS or QGIS environment). However, this data is often structured in different ways (semantically and geometrically). Modelling this data within a common representation framework allows the immediate usage of the data with the same tools for a number of applications. 
 * While standards such as GDF or OpenDRIVE focus on linear (graph-based) or parametric representations of roads, **CityGML 3.0** allows linear, polygonal as well as volumetric (explicit) geometries integrated within a **consistent semantic 3D city model** including models of buildings, vegetation, city furniture, tunnels or bridges. 
 * CityGML version 3.0 provides **revised and extended concepts** for modelling roads and the streetspace presented and explained in this documentation.
 
@@ -54,7 +54,7 @@ Data downloads
 .. admonition:: Hint
    :class: important
 
-   * Most examples datasets presented in in section 4  can be downloaded from `this repository <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation>`_.
+   * Most example datasets presented in in section 4  can be downloaded from `this repository <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation>`_.
    * This includes  `basic <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation/Basic%20examples>`_ as well as `real-world <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation/Real-world%20examples>`_ examples.
 
 .. admonition:: Hint
@@ -260,6 +260,8 @@ The following tables provide recommendations for *AuxiliaryTrafficAreas* and *Tr
      - 1500
    * - border
      - 1600
+   * - road_channel
+     - 1700
    
 The attribute *surfaceMaterial* specifies the type of pavement and can be used by *AuxiliaryTrafficAreas* and *TrafficAreas*. 
 
@@ -777,14 +779,15 @@ Individual Section with one carriageway
                <tran:trafficSpace>
                   <tran:TrafficSpace gml:id="UUID_TS_id_4c95049e-1b96-4a39-b678-29ce209cddb5">
                      <core:boundary>
-                        <tran:TrafficArea gml:id="UUID_TA_0bd21839-0ced-4660-8c21-75dbf633ec7a">
-                           <tran:function>Carriageway</tran:function>
-                           <!Additional attributes such as area in sqm, surface material, etc.>
+                        <tran:TrafficArea gml:id="UUID_TA_0bd21839-0ced-4660-8c21-75dbf633ec7a">                          
                            <core:lod2MultiSurface>
                               <gml:MultiSurface srsName="EPSG:32755" srsDimension="3">
                                  <!Geometry definition>
                               </gml:MultiSurface>
                            </core:lod2MultiSurface>
+                           <tran:function>2</tran:function>
+                           <tran:surfaceMaterial>3</tran:surfaceMaterial>
+                           <!Additional attributes such as area in sqm, etc.>
                         </tran:TrafficArea>
                      </core:boundary>
                      <tran:granularity>way</tran:granularity>
@@ -817,13 +820,14 @@ Individual Section with two carriageways
                   <tran:TrafficSpace gml:id="UUID_TS_id_5c249b72-82c3-47ef-9be3-e3de6340c6cd">
                      <core:boundary>
                         <tran:TrafficArea gml:id="UUID_TA_72cc6ac7-caf4-439b-b08a-707c5dd3f506">
-                           <tran:function>Carriageway</tran:function>
-                           <!Additional attributes such as area in sqm, surface material, etc.>
                            <core:lod2MultiSurface>
                               <gml:MultiSurface srsName="EPSG:32755" srsDimension="3">
                                  <!Geometry definition>
                               </gml:MultiSurface>
                            </core:lod2MultiSurface>
+                           <tran:function>2</tran:function>
+                           <tran:surfaceMaterial>3</tran:surfaceMaterial>
+                           <!Additional attributes such as area in sqm, surface material, etc.>
                         </tran:TrafficArea>
                      </core:boundary>
                      <tran:granularity>way</tran:granularity>
@@ -832,14 +836,15 @@ Individual Section with two carriageways
                <tran:trafficSpace>
                   <tran:TrafficSpace gml:id="UUID_TS_id_cdbf9131-027f-425f-a355-f605d04a4f84">
                      <core:boundary>
-                        <tran:TrafficArea gml:id="UUID_TA_ae280a29-8d9a-49c0-bf74-ffea469290d6">
-                           <tran:function>Carriageway</tran:function>
-                           <!Additional attributes such as area in sqm, surface material, etc.>
+                        <tran:TrafficArea gml:id="UUID_TA_ae280a29-8d9a-49c0-bf74-ffea469290d6">                  
                            <core:lod2MultiSurface>
                               <gml:MultiSurface srsName="EPSG:32755" srsDimension="3">
                                  <!Geometry definition>
                               </gml:MultiSurface>
                            </core:lod2MultiSurface>
+                           <tran:function>2</tran:function>
+                           <tran:surfaceMaterial>3</tran:surfaceMaterial>
+                           <!Additional attributes such as area in sqm, etc.>
                         </tran:TrafficArea>
                      </core:boundary>
                      <tran:granularity>way</tran:granularity>
@@ -874,6 +879,7 @@ Three-way Intersection
                <!(Auxiliary)TrafficSpaces with corresponding (Auxiliary)TrafficAreas>
             </tran:Section>
          </tran:section>
+         <tran:intersection xlink:href="#UUID_20555"/>
       </tran:Road>
    </core:cityObjectMember>
    <core:cityObjectMember>
@@ -928,6 +934,7 @@ Four-way Intersection
                <!(Auxiliary)TrafficSpaces with corresponding (Auxiliary)TrafficAreas>
             </tran:Section>
          </tran:section>
+         <tran:intersection xlink:href="#UUID_20542"/>
       </tran:Road>
    </core:cityObjectMember>
    <core:cityObjectMember>
