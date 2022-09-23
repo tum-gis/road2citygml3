@@ -761,6 +761,8 @@ Modelling examples
 
 Individual Section with one carriageway
 ==========================================
+This example dataset can be found `here <https://github.com/opengeospatial/CityGML-3.0Encodings/blob/master/CityGML/Examples/Transportation/Real-world%20examples/CityGML_3.0_transportation_data_from_Open_Data_Portal_Melbourne/citygml3_individual_section_1carriageway.gml>`_.
+
 .. figure:: ../figures/section_1carriageway.PNG
    :align: center
    :name:  fig_section1way
@@ -802,6 +804,8 @@ Individual Section with one carriageway
 
 Individual Section with two carriageways
 ==========================================
+This example dataset can be found `here <https://github.com/opengeospatial/CityGML-3.0Encodings/blob/master/CityGML/Examples/Transportation/Real-world%20examples/CityGML_3.0_transportation_data_from_Open_Data_Portal_Melbourne/citygml3_individual_section_2carriageways.gml>`_.
+
 .. figure:: ../figures/section_2carriageways.PNG
    :align: center
    :name:  fig_section2ways
@@ -862,6 +866,8 @@ Individual Section with two carriageways
 
 Three-way Intersection
 ==========================================
+This example dataset can be found `here <https://github.com/opengeospatial/CityGML-3.0Encodings/blob/master/CityGML/Examples/Transportation/Real-world%20examples/CityGML_3.0_transportation_data_from_Open_Data_Portal_Melbourne/citygml3_roads_3wayintersection.gml>`_.
+
 .. figure:: ../figures/3way.PNG
    :align: center
    :name:  fig_3way
@@ -910,6 +916,7 @@ Three-way Intersection
 
 Four-way Intersection
 ==========================================
+This example dataset can be found `here <https://github.com/opengeospatial/CityGML-3.0Encodings/blob/master/CityGML/Examples/Transportation/Real-world%20examples/CityGML_3.0_transportation_data_from_Open_Data_Portal_Melbourne/citygml3_roads_4wayintersection.gml>`_.
 
 .. figure:: ../figures/4way.PNG
    :align: center
@@ -964,6 +971,8 @@ Four-way Intersection
 
 Small roundabout
 ==========================================
+This example dataset can be found `here <https://github.com/opengeospatial/CityGML-3.0Encodings/blob/master/CityGML/Examples/Transportation/Real-world%20examples/CityGML_3.0_transportation_data_from_Open_Data_Portal_Melbourne/citygml3_roads_roundabout.gml>`_.
+
 * Small roundabouts can be modelled as an Intersection.
 * The structure of the corresponding CityGML (XML) document is the same as in :numref:`xml_4way`.
 * The specific type of *Intersection* (in this case 'roundabout') can be indicated with a corresponding *class* attribute.
@@ -1099,6 +1108,8 @@ Roads on Bridges
  
    Shared surfaces by Roads and Bridges using CityObjectRelations
 
+An example dataset can be downloaded `here <https://github.com/opengeospatial/CityGML-3.0Encodings/blob/master/CityGML/Examples/Transportation/Basic%20examples/Road_over_Bridge_CityGML3.0_LOD2_with_CityObjectRelations.gml>`_.
+
 .. _roadonbridge1:
 .. code-block:: xml
    :caption: TrafficArea with CityObjectRelation "equal" pointing to corresponding RoofSurface.
@@ -1138,6 +1149,7 @@ Roads within Buildings (Parking garage)
 ==========================================
 * Transportation networks and *Roads* can reach into *Buildings* (e.g. within a parking garage). 
 * In this case, *TrafficAreas* are also *Floor-* or *RoofSurfaces*.
+* An example dataset can be downloaded `here <https://github.com/opengeospatial/CityGML-3.0Encodings/blob/master/CityGML/Examples/Transportation/Basic%20examples/ParkingGarage_CityGML3.0_LOD2_with_CityObjectRelations_and_XLinks.gml>`_.
 
 .. figure:: ../figures/garage.PNG
    :align: center
@@ -1145,7 +1157,8 @@ Roads within Buildings (Parking garage)
    
 
    Individual CityFurniture objects with different functions part of a CityObjectGroup.
-   
+
+
 
 .. figure:: ../figures/garage1.PNG
    :align: center
