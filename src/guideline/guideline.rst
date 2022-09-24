@@ -54,7 +54,7 @@ Data downloads
 .. admonition:: Hint
    :class: important
 
-   * Most example datasets presented in in section 4  can be downloaded from `this repository <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation>`_.
+   * Most example datasets presented in section 4  can be downloaded from `this repository <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation>`_.
    * This includes  `basic <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation/Basic%20examples>`_ as well as `real-world <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation/Real-world%20examples>`_ examples.
 
 .. admonition:: Hint
@@ -568,7 +568,7 @@ TrafficAreas and AuxiliaryTrafficAreas
 
    *Section* with one carriageway decomposed into individual *TrafficAreas* (blue) and *AuxiliaryTrafficAreas* (purple) (own illustration based on SketchUp model). 
 
-The median and grass areas in this example is modelled as *AuxiliaryTrafficAreas* with an attribute *surface material* = "grass". In addition these areas can be modelled as *Vegetation* objects (*PLantCover*) linked to corresponding *AuxiliaryTrafficAreas* using a *CityObjectRelation* with the value "equal". This approach can be helpful for accurately calculating (non-)sealed surfaces within a city.
+The median and grass areas in this example is modelled as *AuxiliaryTrafficAreas* with an attribute *surface material* = "grass". In addition these areas can be modelled as *Vegetation* objects (*PlantCover*) linked to corresponding *AuxiliaryTrafficAreas* using a *CityObjectRelation* with the value "equal". This approach can be helpful for accurately calculating (non-)sealed surfaces within a city.
    
 .. _fig_sections2:
 .. figure:: ../figures/trafficareas_twocarriageway.PNG
