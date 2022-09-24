@@ -1022,22 +1022,10 @@ Dead end
    Dead end modelled as individual Section.
 
 
-Motorway entry / exit
-==========================================
-* Motorway entries and exits should be modelled as individual *Sections*.
-* :numref:`entryexit` shows a possible segmentation of multiple motorway entries and exits into several *Sections*.
-
-.. _entryexit:
-.. figure:: ../figures/entry_exit1.PNG
-   :align: center
-   :name:  fig_entry_exit
-
-   Motorway entries and exits segmented into multiple *Sections*.
-
-
 Complex motorway interchange 
 ====================================
 * The following example shows a complex motorway derived from OpenDRIVE data using the open-source tool `r:trån. <https://github.com/tum-gis/rtron>`_ 
+* Motorway entries and exits should be modelled as individual *Sections*.
 * The interchange is segmented into smaller *Sections* and *Intersections* each further divided into *TrafficAreas* and *AuxiliaryTrafficAreas*.
 
 
