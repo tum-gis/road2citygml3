@@ -9,7 +9,7 @@ Do you have a comment or suggestions for improvement to this documentation? Plea
 +++++++++++++++++++++++
 
 
- * `Recording of a presentation on OpenDRIVE and the CityGML Transportation module <https://www.youtube.com/watch?v=YSk3z5haDOM>`_
+ * `Recording of a presentation on OpenDRIVE and the CityGML Transportation module <https://youtu.be/YSk3z5haDOM?t=2386>`_
  * `Project: Streetspace model of New York City <https://www.asg.ed.tum.de/gis/projekte/new-york-city-3d/>`_
 
 
