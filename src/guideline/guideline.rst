@@ -54,8 +54,8 @@ Data downloads
 .. admonition:: Hint
    :class: important
 
-   * Most example datasets presented in section 4  can be downloaded from `this repository <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation>`_.
-   * This includes  `basic <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation/Basic%20examples>`_ as well as `real-world <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples/Transportation/Real-world%20examples>`_ examples.
+   * Most example datasets presented in section 4  can be downloaded from `this repository <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/Moved_to_CITYGML-3.0Encoding_CityGML/Examples/Transportation>`_.
+   * This includes  `basic <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/Moved_to_CITYGML-3.0Encoding_CityGML/Examples/Transportation/Basic%20examples>`_ as well as `real-world <https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/Moved_to_CITYGML-3.0Encoding_CityGML/Examples/Transportation/Real-world%20examples>`_ examples.
 
 .. admonition:: Hint
    :class: important
@@ -761,7 +761,7 @@ Modelling examples
 
 Individual Section with one carriageway
 ==========================================
-This example dataset can be found `here <https://github.com/opengeospatial/CityGML-3.0Encodings/blob/master/CityGML/Examples/Transportation/Real-world%20examples/CityGML_3.0_transportation_data_from_Open_Data_Portal_Melbourne/citygml3_individual_section_1carriageway.gml>`_.
+This example dataset can be found `here <https://github.com/opengeospatial/CityGML-3.0Encodings/blob/master/Moved_to_CITYGML-3.0Encoding_CityGML/Examples/Transportation/Real-world%20examples/CityGML_3.0_transportation_data_from_Open_Data_Portal_Melbourne/citygml3_individual_section_1carriageway.gml>`_.
 
 .. figure:: ../figures/section_1carriageway.PNG
    :align: center
@@ -804,7 +804,7 @@ This example dataset can be found `here <https://github.com/opengeospatial/CityG
 
 Individual Section with two carriageways
 ==========================================
-This example dataset can be found `here <https://github.com/opengeospatial/CityGML-3.0Encodings/blob/master/CityGML/Examples/Transportation/Real-world%20examples/CityGML_3.0_transportation_data_from_Open_Data_Portal_Melbourne/citygml3_individual_section_2carriageways.gml>`_.
+This example dataset can be found `here <https://github.com/opengeospatial/CityGML-3.0Encodings/blob/master/Moved_to_CITYGML-3.0Encoding_CityGML/Examples/Transportation/Real-world%20examples/CityGML_3.0_transportation_data_from_Open_Data_Portal_Melbourne/citygml3_individual_section_2carriageways.gml>`_.
 
 .. figure:: ../figures/section_2carriageways.PNG
    :align: center
@@ -866,7 +866,7 @@ This example dataset can be found `here <https://github.com/opengeospatial/CityG
 
 Three-way Intersection
 ==========================================
-This example dataset can be found `here <https://github.com/opengeospatial/CityGML-3.0Encodings/blob/master/CityGML/Examples/Transportation/Real-world%20examples/CityGML_3.0_transportation_data_from_Open_Data_Portal_Melbourne/citygml3_roads_3wayintersection.gml>`_.
+This example dataset can be found `here <https://github.com/opengeospatial/CityGML-3.0Encodings/blob/master/Moved_to_CITYGML-3.0Encoding_CityGML/Examples/Transportation/Real-world%20examples/CityGML_3.0_transportation_data_from_Open_Data_Portal_Melbourne/citygml3_roads_3wayintersection.gml>`_.
 
 .. figure:: ../figures/3way.PNG
    :align: center
@@ -916,7 +916,7 @@ This example dataset can be found `here <https://github.com/opengeospatial/CityG
 
 Four-way Intersection
 ==========================================
-This example dataset can be found `here <https://github.com/opengeospatial/CityGML-3.0Encodings/blob/master/CityGML/Examples/Transportation/Real-world%20examples/CityGML_3.0_transportation_data_from_Open_Data_Portal_Melbourne/citygml3_roads_4wayintersection.gml>`_.
+This example dataset can be found `here <https://github.com/opengeospatial/CityGML-3.0Encodings/blob/master/Moved_to_CITYGML-3.0Encoding_CityGML/Examples/Transportation/Real-world%20examples/CityGML_3.0_transportation_data_from_Open_Data_Portal_Melbourne/citygml3_roads_4wayintersection.gml>`_.
 
 .. figure:: ../figures/4way.PNG
    :align: center
@@ -971,7 +971,7 @@ This example dataset can be found `here <https://github.com/opengeospatial/CityG
 
 Small roundabout
 ==========================================
-This example dataset can be found `here <https://github.com/opengeospatial/CityGML-3.0Encodings/blob/master/CityGML/Examples/Transportation/Real-world%20examples/CityGML_3.0_transportation_data_from_Open_Data_Portal_Melbourne/citygml3_roads_roundabout.gml>`_.
+This example dataset can be found `here <https://github.com/opengeospatial/CityGML-3.0Encodings/blob/master/Moved_to_CITYGML-3.0Encoding_CityGML/Examples/Transportation/Real-world%20examples/CityGML_3.0_transportation_data_from_Open_Data_Portal_Melbourne/citygml3_roads_roundabout.gml>`_.
 
 * Small roundabouts can be modelled as an Intersection.
 * The structure of the corresponding CityGML (XML) document is the same as in :numref:`xml_4way`.
