@@ -1252,6 +1252,13 @@ Dynamizer
 
    **Dynamizers** are objects that inject time series data for an individual attribute of the city object in which the *Dynamizer* is included. In order to represent dynamic (time-dependent) variations of its value, the time series data overrides the static value of the referenced city object attribute.
 
+.. figure:: ../figures/dynamic_properties.PNG
+   :align: center
+   :name:  fig_vdynamizer
+
+   Induction loop within a driving lane linked with time-varying traffic occupancy data.
+
+
 Interactive online demos
 +++++++++++++++++++++++++++++++++
 .. admonition:: Hint
