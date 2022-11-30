@@ -47,6 +47,13 @@ The following related publication explains concepts of the CityGML 3.0 Transport
 ++++++++++++++++++++++++++++++++
 Some of the conceptual illustrations in this document were created based on 3D models available in the `SketchUp Warehouse <https://3dwarehouse.sketchup.com/user/500647bb-30cf-4f44-b23d-1680d091bb14/Alex-R>`_. The guideline is inspired by the `Road2Simulation guideline <https://zenodo.org/record/3375550>`_ for the OpenDRIVE standard.
 
+This guideline was created in the context of several projects including:
+
+* `Connected Urban Twins (CUT) <https://connectedurbantwins.de/>`_
+* `Digital Twin Munich / Digitaler Zwilling München <https://muenchen.digital/twin/>`_
+* `SaveNoW - Functional and traffic safety for automated and connected mobility <https://www.asg.ed.tum.de/en/gis/projects/savenow/>`_
+*  `PLIMOS -  Planung intermodaler Mobilitätsangebote basierend auf 3D-Stadtmodellen <https://www.asg.ed.tum.de/en/gis/projekte/plimos/>`_
+
 |envelope|  Contact 
 +++++++++++++++++++++++++++++++++++++++++++
 
