@@ -18,11 +18,14 @@ Recommendations are related to the conceptual model of the Open Geospatial Conso
 If you find this documentation helpful for your work, please consider citing it as follows.
 
 ```plain
-@manual{Beil_Road2CityGML3_2022,
-        author = {Beil, Christof and Kutzner, Tatjana and Schwab, Benedikt and Kolbe, Thomas H.},
-        title  = {Road2CityGML3},  
-        url    = {https://tum-gis.github.io/road2citygml3/},
-        year   = {2022}
+@manual{road2citygml3_2023,
+        author       = {Beil, Christof and Kutzner, Tatjana and Schwab, Benedikt and Kolbe, Thomas H.},
+        title        = {Road2CityGML3},
+        year         = 2023,
+        publisher    = {Zenodo},
+        version      = {1.0},
+        doi          = {10.5281/zenodo.7919560},
+        url          = {https://doi.org/10.5281/zenodo.7919560}
 }
 ```
 

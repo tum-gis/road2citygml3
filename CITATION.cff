@@ -14,9 +14,10 @@ authors:
   given-names: "Thomas H."
   orcid: "https://orcid.org/0000-0003-1456-0423"
 title: "Road2CityGML3"
-version: 0.9
-date-released: 2022-08-23
-url: "https://tum-gis.github.io/road2citygml3/"
+version: 1.0
+date-released: 2023-05-10
+doi: "10.5281/zenodo.7919560",
+url: "https://doi.org/10.5281/zenodo.7919560"
 preferred-citation:
   type: manual
   authors:
@@ -33,6 +34,7 @@ preferred-citation:
     given-names: "Thomas H."
     orcid: "https://orcid.org/0000-0003-1456-0423"
   title: "Road2CityGML3"
-  version: 0.9
-  year: 2022
-  url: "https://tum-gis.github.io/road2citygml3/"
+  version: 1.0
+  year: 2023
+  doi: "10.5281/zenodo.7919560",
+  url: "https://doi.org/10.5281/zenodo.7919560"

@@ -16,16 +16,22 @@ Do you have a comment or suggestions for improvement to this documentation? Plea
 
 |file-text|  Citation
 ++++++++++++++++++++++++
-If you find this documentation helpful for your work, please consider citing it as follows.
+If you find this documentation helpful for your work, please consider citing it as follows. 
+
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.7919560.svg
+   :target: https://doi.org/10.5281/zenodo.7919560
 
 .. code-block:: 
-
-   @manual{Beil_Road2CityGML3_2022,
-           author = {Beil, Christof and Kutzner, Tatjana and Schwab, Benedikt and Kolbe, Thomas H.},
-           title  = {Road2CityGML3},  
-           url    = {https://tum-gis.github.io/road2citygml3/},
-           year   = {2022}
-          }
+   
+   @manual{road2citygml3_2023,
+           author       = {Beil, Christof and Kutzner, Tatjana and Schwab, Benedikt and Kolbe, Thomas H.},
+           title        = {Road2CityGML3},
+           year         = 2023,
+           publisher    = {Zenodo},
+           version      = {1.0},
+           doi          = {10.5281/zenodo.7919560},
+           url          = {https://doi.org/10.5281/zenodo.7919560}
+           }
 
 The following related publication explains concepts of the CityGML 3.0 Transportation module.
 
@@ -40,7 +46,7 @@ The following related publication explains concepts of the CityGML 3.0 Transport
             number   = {10},
             pages    = {603},
             url      = {https://doi.org/10.3390/ijgi9100603},
-   }
+            }
 
 
 |handshake-o| Acknowledgement
@@ -52,7 +58,7 @@ This guideline was created in the context of several projects including:
 * `Connected Urban Twins (CUT) <https://connectedurbantwins.de/>`_
 * `Digital Twin Munich / Digitaler Zwilling München <https://muenchen.digital/twin/>`_
 * `SaveNoW - Functional and traffic safety for automated and connected mobility <https://www.asg.ed.tum.de/en/gis/projects/savenow/>`_
-*  `PLIMOS -  Planung intermodaler Mobilitätsangebote basierend auf 3D-Stadtmodellen <https://www.asg.ed.tum.de/en/gis/projekte/plimos/>`_
+*  `PLIMOS -  Planning intermodal mobility concepts based on 3D city models <https://www.asg.ed.tum.de/en/gis/projekte/plimos/>`_
 
 |envelope|  Contact 
 +++++++++++++++++++++++++++++++++++++++++++
