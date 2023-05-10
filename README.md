@@ -15,7 +15,9 @@ View the documentation [here](https://tum-gis.github.io/road2citygml3/).
 Recommendations are related to the conceptual model of the Open Geospatial Consortium (OGC) standard [CityGML version 3.0](https://docs.ogc.org/is/20-010/20-010.html).
 
 ## Citation
-If you find this documentation helpful for your work, please consider citing it as follows.
+If you find this documentation helpful for your work, please consider citing it as follows. [![DOI](https://zenodo.org/badge/528021324.svg)](https://zenodo.org/badge/latestdoi/528021324)
+
+
 
 ```plain
 @manual{road2citygml3_2023,
