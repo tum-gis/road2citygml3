@@ -16,7 +16,7 @@ authors:
 title: "Road2CityGML3"
 version: 1.0
 date-released: 2023-05-10
-doi: "10.5281/zenodo.7919560",
+doi: 10.5281/zenodo.7919560
 url: "https://doi.org/10.5281/zenodo.7919560"
 preferred-citation:
   type: manual
